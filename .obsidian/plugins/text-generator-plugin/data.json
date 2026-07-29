@@ -1,0 +1,16 @@
+{
+  "version": "0.7.46",
+  "endpoint": "https://generativelanguage.googleapis.com",
+  "api_key": "AQ.Ab8RN6J2fyrekob2CTrRGSenreTk1XycuoWzFdwJYkt-6L8lHg",
+  "llmProviderId": "Google",
+  "LLMProviderOptions": {
+    "Google": {
+      "api_key": "AQ.Ab8RN6J2fyrekob2CTrRGSenreTk1XycuoWzFdwJYkt-6L8lHg",
+      "model": "gemini-1.5-pro-latest"
+    }
+  },
+  "options": {
+    "showStatusBar": true,
+    "displayResultsInModal": true
+  }
+}

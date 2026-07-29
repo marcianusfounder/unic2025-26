@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": "#a855f7",
+    "recentlyUsedIcons": [],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre": "📂",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre": "📂",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Engenharia de Software I": "💻",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Engenharia de Software II": "💻",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Inglês III": "🇬🇧",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia": "🛡️",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo": "🕸️",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Laboratórios de Novas Tendências e Tecnologias I": "🔬",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação": "📊",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Programação Web I": "🌐",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática": "⚖️",
+  "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II": "🔬"
+}

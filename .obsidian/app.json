@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true,
+  "spellcheck": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": false,
+  "readableLineLength": false,
+  "promptDelete": false
+}
