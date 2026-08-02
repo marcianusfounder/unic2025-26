@@ -5,33 +5,36 @@ status: "Não Iniciado"
 ---
 # Guia de Estudo Teórico: Engenharia de Software I
 
-Este guia exaustivo aborda os fundamentos, princípios, **modelos** e práticas da Engenharia de Software, servindo como material definitivo para o estudo universitário da disciplina (baseado nas referências canónicas de Roger S. Pressman e Ian Sommerville).
+Este guia exaustivo aborda os fundamentos, princípios, ==modelos==  %%Modelos de Engenharia de Software%% e práticas da Engenharia de Software, servindo como material definitivo para o estudo universitário da disciplina (baseado nas referências canónicas de Roger S. Pressman e Ian Sommerville).
+
+> [!note] Por pesquisar
+> Fundamentos, princípios, modelos  e práticas da Engenharia de Software.
 
 ---
 
-## 1. O Software: Natureza, Características e Importância
+## 1. O Software %%Necessidade de definições e conceitos mais claros sobre o que é de fato um software, e não simplesmente descrições%%: Natureza, Características e Importância
 
 O software é o motor que impulsiona a era da informação. Mais do que simples programas de computador, o software compreende o código executável, as estruturas de dados associadas e a documentação abrangente que descreve a sua operação e uso.
 
 ### 1.1 Características Únicas do Software
-De acordo com Roger S. Pressman, o software possui uma natureza lógica e não física, o que lhe confere características muito distintas em relação aos produtos de engenharia tradicionais (hardware, pontes, edifícios):
+De acordo com Roger S. Pressman, o software possui uma natureza *lógica e não física*, o que lhe confere características muito distintas em relação aos ==produtos de engenharia tradicionais== (hardware, pontes, edifícios):
 
 1. **O software é desenvolvido ou construído intelectualmente, não manufaturado:** 
-   Na engenharia de hardware, a fase de fabrico é onde os defeitos de qualidade são frequentemente introduzidos. No software, não há "fábrica" no sentido tradicional. Cada cópia é perfeita e idêntica; portanto, as falhas resultam de erros no *design* e na engenharia, e não de um processo de estampagem ou montagem falho.
+   Na <u>engenharia de hardware</u>, a fase de fabrico é onde os defeitos de qualidade são frequentemente introduzidos. No software, não há "fábrica" no sentido tradicional. **Cada cópia é perfeita e idêntica**; portanto, as falhas resultam de erros no *design* e na engenharia, e não de um processo de estampagem ou montagem falho.
 2. **O software não "desgasta", mas deteriora-se:**
-   O hardware sofre com a fadiga do material, fricção, calor, e os seus componentes falham ao longo do tempo (a clássica "curva da banheira" de taxas de falha). O software, em teoria, não sofre desgaste físico. A sua curva de falhas deveria estabilizar e permanecer plana. No entanto, na prática, o software sofre *deterioração*. À medida que o ambiente muda (novos sistemas operativos, novas exigências do utilizador), o software precisa de manutenção. Cada modificação introduz novos erros potenciais, aumentando a sua entropia e reduzindo a sua qualidade estrutural.
+   O hardware sofre com a fadiga do material, fricção, calor, e os seus componentes falham ao longo do tempo (a clássica "==curva da banheira==" de taxas de falha %% Por pesquisar%%). O software, em teoria, não sofre desgaste físico. A sua <u>curva de falhas</u> deveria estabilizar e permanecer plana. No entanto, na prática, o software sofre *deterioração*. À medida que o ambiente muda (novos sistemas operativos, novas exigências do utilizador), o software precisa de **manutenção**. Cada modificação introduz novos erros potenciais, aumentando a sua **entropia** e reduzindo a sua qualidade estrutural.
 3. **O software é (maioritariamente) feito à medida:**
-   Apesar do crescimento das bibliotecas reutilizáveis e dos pacotes de software de prateleira (COTS - *Commercial Off-The-Shelf*), a maioria dos grandes sistemas de software críticos é construída por encomenda para satisfazer os requisitos específicos de um cliente corporativo.
+   Apesar do crescimento das bibliotecas reutilizáveis e dos **pacotes de software de prateleira** (COTS - *Commercial Off-The-Shelf* %%Por pesquisar%%), a maioria dos grandes sistemas de software críticos é construída por encomenda para satisfazer os requisitos específicos de um cliente corporativo.
 4. **Intangibilidade:**
-   O software é invisível. Não podemos tocar-lhe ou medir o seu progresso através de uma estrutura física. Isto torna a gestão de projetos de software extremamente difícil, obrigando os engenheiros a usar "artefactos" (documentos, diagramas UML, relatórios de testes) para visualizar o avanço do trabalho.
+   O software é invisível. Não podemos tocar-lhe ou medir o seu progresso através de uma estrutura física. Isto torna a gestão de projetos de software extremamente difícil, obrigando os engenheiros a usar "**artefactos** %%Por pesquisar%%" (documentos, diagramas UML, relatórios de testes) para visualizar o avanço do trabalho.
 5. **Fácil de modificar, mas difícil de controlar (Complexidade Crescente):**
-   Mudar uma linha de código é trivial; compreender o impacto dessa mudança num sistema com milhões de linhas é um desafio monumental. A complexidade do software aumenta exponencialmente à medida que adicionamos novas funcionalidades (Lei de Lehman).
+   Mudar uma linha de código é trivial; compreender o impacto dessa mudança num sistema com milhões de linhas é um desafio monumental. A complexidade do software aumenta exponencialmente à medida que adicionamos novas funcionalidades (**Lei de Lehman** %%Por pesquisar%%).
 
-### 1.2 Os Problemas Crónicos (A "Crise" do Software)
+### 1.2 Os Problemas Crónicos (A "Crise" do Software %%Tudo sobre a crise do software%%)
 O desenvolvimento de software tem sido historicamente atormentado por problemas sistémicos:
 *   **Estimativas imprecisas:** Projetos estouram orçamentos e prazos consistentemente.
 *   **Insatisfação do Cliente:** O produto entregue não corresponde àquilo de que o cliente realmente necessitava.
-*   **Qualidade Pobre:** Software entregue com inúmeros *bugs*, vulnerabilidades de segurança e problemas de desempenho.
+*   **Qualidade Pobre** %%Como melhorar a qualidade dos software atualmente com o advento das IAs?%%: Software entregue com inúmeros *bugs*, vulnerabilidades de segurança e problemas de desempenho.
 *   **Manutenção Intratável:** Código "esparguete", sem documentação, impossível de atualizar ou corrigir sem quebrar outras partes do sistema.
 
 As causas destes problemas radicam na **falta de comunicação**, **requisitos voláteis**, **ausência de processos definidos** e **complexidade não gerida**.
@@ -50,12 +53,12 @@ O processo de engenharia assenta numa estrutura em camadas:
 1. **Foco na Qualidade (A base):** Qualquer esforço de engenharia deve repousar sobre um compromisso organizacional com a melhoria contínua e a gestão da qualidade total (TQM, Six Sigma, etc.).
 2. **Processo (O cimento):** O processo é o elo que mantém a tecnologia em conjunto. Define um "framework" (estrutura) de atividades essenciais e permite o desenvolvimento racional e oportuno.
 3. **Métodos (A técnica):** Fornecem o "como fazer" técnico. Incluem análise de requisitos, design, codificação, testes e suporte.
-4. **Ferramentas (O suporte automatizado):** As ferramentas CASE (*Computer-Aided Software Engineering*) suportam os métodos e o processo (ex: IDEs, Git, Jira, SonarQube).
+4. **Ferramentas (O suporte automatizado):** As ferramentas CASE (*Computer-Aided Software Engineering* %%Por pesquisar%%) suportam os métodos e o processo (ex: IDEs, Git, Jira, SonarQube).
 
 ### 2.3 Princípios Fundamentais
 Estes princípios balizam qualquer projeto bem-sucedido:
 1.  **Compreender o Problema:** A fase de levantamento de requisitos é a mais crítica. O custo de corrigir um erro de requisito na fase de produção é 100 vezes maior do que na fase de planeamento.
-2.  **Planeamento Adequado:** Gerir riscos, definir o âmbito e o cronograma. Projetos de sucesso têm gestores que sabem dizer "não" a mudanças de âmbito não controladas (*scope creep*).
+2.  **Planeamento Adequado:** Gerir riscos, definir o âmbito e o cronograma. Projetos de sucesso têm gestores que sabem dizer "não" a mudanças de âmbito não controladas (*scope creep* %%Por pesquisar%%).
 3.  **Modularidade (Dividir para Conquistar):** Sistemas complexos devem ser divididos em módulos (ou serviços) menores, que sejam **altamente coesos** (cada módulo faz uma única coisa bem feita) e **fracamente acoplados** (módulos independentes uns dos outros).
 4.  **Qualidade Contínua (V&V):** 
     *   *Validação:* "Estamos a construir o produto certo?" (Satisfaz o utilizador?)
@@ -74,19 +77,19 @@ Podemos classificar a qualidade em três perspetivas:
 **A. Operação do Produto (O que o utilizador experimenta no dia a dia):**
 *   **Correção:** O software faz aquilo que os requisitos exigem? (Sem falhas de lógica).
 *   **Confiabilidade:** A probabilidade de operação livre de falhas num determinado ambiente e período. 
-*   **Eficiência:** O uso ótimo dos recursos do sistema (CPU, memória RAM, largura de banda).
-*   **Integridade e Segurança:** Controlo de acessos, proteção contra ataques (ex: SQL Injection, DDoS) e garantia da confidencialidade, integridade e disponibilidade dos dados (Tríade CIA).
+*   **Eficiência:** O uso ótimo dos ==recursos do sistema== %%Por pesquisar%% (CPU, memória RAM, largura de banda).
+*   **Integridade e Segurança:** Controlo de acessos, proteção contra ataques (ex: SQL Injection, DDoS) e garantia da confidencialidade, integridade e disponibilidade dos dados (**Tríade CIA** %%Por pesquisar%%).
 *   **Usabilidade:** O quão fácil e natural é aprender e utilizar o sistema. Uma boa interface (UI) e experiência (UX) são essenciais.
 
 **B. Revisão do Produto (Capacidade de adaptação interna):**
 *   **Manutenibilidade:** O esforço necessário para localizar e corrigir um erro num programa em funcionamento.
 *   **Flexibilidade:** O esforço para modificar o programa operativo (adicionar novas funcionalidades).
-*   **Testabilidade:** O esforço necessário para testar um programa e garantir que realiza a sua função pretendida (ex: arquitetura facilitadora de *Unit Tests* e *Mocking*).
+*   **Testabilidade** %%Por pesquisar%%: O esforço necessário para testar um programa e garantir que realiza a sua função pretendida (ex: arquitetura facilitadora de *Unit Tests* e *Mocking*).
 
 **C. Transição do Produto (Adaptação a novos ambientes):**
-*   **Portabilidade:** Esforço necessário para migrar o sistema para outro ambiente (ex: migrar de Windows para Linux, ou de *on-premise* para a Nuvem).
+*   **Portabilidade:** Esforço necessário para migrar o sistema para outro ambiente (ex: migrar de Windows para Linux, ou de **on-premise** para a Nuvem).
 *   **Reusabilidade:** A extensão em que um programa ou módulo pode ser aproveitado noutras aplicações.
-*   **Interoperabilidade:** A capacidade do sistema de se integrar fluidamente com outros sistemas (através de APIs, *Webhooks*, *microservices*).
+*   **Interoperabilidade:** A capacidade do sistema de se integrar fluidamente com outros sistemas (através de APIs, *Webhooks*, *microservices* %%Por pesquisar%%).
 
 ---
 
@@ -95,16 +98,62 @@ Podemos classificar a qualidade em três perspetivas:
 O modelo de processo estabelece o fluxo de trabalho e a sequência das atividades de desenvolvimento.
 
 ### 4.1 Modelo Cascata (Waterfall)
+
+```mermaid
+graph TD
+    A[Requisitos / Comunicação] --> B[Planeamento / Design]
+    B --> C[Implementação / Código]
+    C --> D[Testes / Integração]
+    D --> E[Operação e Manutenção]
+    
+    style A fill:#f9f9f9,stroke:#333
+    style B fill:#f9f9f9,stroke:#333
+    style C fill:#f9f9f9,stroke:#333
+    style D fill:#f9f9f9,stroke:#333
+    style E fill:#f9f9f9,stroke:#333
+```
+
 *   **Como funciona:** Abordagem linear e sequencial (Comunicação $\rightarrow$ Planeamento $\rightarrow$ Modelação/Design $\rightarrow$ Construção/Código $\rightarrow$ Implementação/Testes).
-*   **Vantagens:** Fácil de compreender, as fases são rígidas, com *milestones* claros. Obriga a extensa documentação.
+*   **Vantagens:** Fácil de compreender, as fases são rígidas, com *==milestones==* claros. Obriga a extensa documentação.
 *   **Desvantagens:** É irrealista. Os requisitos de um cliente raramente estão "congelados" desde o início. Quando o cliente vê o produto (no final do ciclo), pode aperceber-se que não é o que queria. O custo das alterações tardias é catastrófico. O projeto pode sofrer bloqueios prolongados.
 
 ### 4.2 Modelo em Espiral (Boehm)
+
+```mermaid
+graph TD
+    Z((Início)) --> A
+    
+    subgraph Ciclo Iterativo
+        A[1. Comunicação] --> B[2. Planeamento e Análise de Riscos]
+        B --> C[3. Engenharia e Construção]
+        C --> D[4. Avaliação pelo Cliente]
+        D -.->|Novo Ciclo Mais Complexo| A
+    end
+
+    style Z fill:#e1f5fe,stroke:#0277bd
+```
+
 *   **Como funciona:** Abordagem cíclica que engloba as características iterativas com aspetos controlados do modelo cascata. A espiral é dividida em secções de tarefas (Comunicação, Planeamento, Análise de Risco, Engenharia, Construção e Lançamento, Avaliação pelo Cliente). 
 *   **Vantagens:** Excelente foco na **gestão de riscos** contínua. Projetos de grande porte e críticos usam este modelo para criar protótipos incrementais.
 *   **Desvantagens:** Exige altíssima especialização na identificação e gestão de riscos. Se o risco for mal avaliado, o projeto fracassa.
 
 ### 4.3 Desenvolvimento Ágil (Scrum / XP)
+
+```mermaid
+graph LR
+    A[Product Backlog] -->|Sprint Planning| B(Sprint Backlog)
+    B --> C{Sprint}
+    
+    C -->|Daily Stand-up| C
+    C -->|2 a 4 semanas| D[Incremento Entregável]
+    
+    D -->|Sprint Review| E[Avaliação / Cliente]
+    E -->|Sprint Retrospective| A
+    
+    style C fill:#fff3e0,stroke:#e65100,stroke-width:2px,stroke-dasharray: 5 5
+    style D fill:#e8f5e9,stroke:#2e7d32
+```
+
 *   **A Filosofia (Manifesto Ágil):** Indivíduos e interações acima de processos; Software em funcionamento acima de documentação exaustiva; Colaboração com o cliente acima de negociação de contratos; Resposta à mudança acima do seguimento de um plano.
 *   **Scrum:** Um framework iterativo. O trabalho é dividido em **Sprints** (ciclos curtos de 2 a 4 semanas).
     *   *Papéis:* Product Owner (voz do cliente, gere o *Product Backlog*), Scrum Master (facilitador, remove impedimentos), Development Team.

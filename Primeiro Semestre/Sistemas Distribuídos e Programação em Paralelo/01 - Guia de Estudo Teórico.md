@@ -1,36 +1,36 @@
 ---
-disciplina: "Sistemas Distribuídos e Programação em Paralelo"
-tipo: "01 - Guia de Estudo Teórico"
-status: "Não Iniciado"
+disciplina: Sistemas Distribuídos e Programação em Paralelo
+tipo: 01 - Guia de Estudo Teórico
+status: Não Iniciado
 ---
 # Guia de Estudo Teórico: Sistemas Distribuídos e Programação em Paralelo
 
-Bem-vindo ao guia exaustivo de estudos sobre **Sistemas Distribuídos e Programação em Paralelo**. Este material foi estruturado em nível universitário para oferecer uma compreensão profunda e detalhada dos fundamentos, arquiteturas, algoritmos, comunicação, segurança e paradigmas paralelos. 
+Bem-vindo ao guia exaustivo de estudos sobre **Sistemas Distribuídos e Programação em Paralelo**. Este material foi estruturado em nível universitário para oferecer uma compreensão profunda e detalhada dos fundamentos, ==arquiteturas, algoritmos==, comunicação, ==segurança e paradigmas paralelos==. 
 
 ---
 
 ## 1. Introdução aos Sistemas Distribuídos
 
-Segundo Andrew S. Tanenbaum, um **Sistema Distribuído** é definido como *"um conjunto de computadores independentes que se apresentam aos seus usuários como um sistema único e coerente"*. 
+Segundo Andrew S. Tanenbaum, um **Sistema Distribuído** é definido como *"um conjunto de computadores independentes que se apresentam aos seus usuários como um ==sistema único e coerente=="*. 
 
-A essência de um sistema distribuído é esconder a complexidade (distribuição física, falhas parciais, heterogeneidade de hardware e software) do usuário final. O usuário não precisa saber em qual servidor seus dados estão fisicamente armazenados ou qual nó de processamento está resolvendo sua requisição.
+A essência de um sistema distribuído é <u>esconder a complexidade</u> (distribuição física, falhas parciais, heterogeneidade de hardware e software) do usuário final. O usuário não precisa saber em qual servidor seus dados estão fisicamente armazenados ou qual nó de processamento está resolvendo sua requisição.
 
 ### Objetivos Principais
 1. **Compartilhamento de Recursos:** Facilitar o acesso a recursos remotos de forma controlada.
-2. **Transparência:** Ocultar a distribuição dos processos e recursos. Existem vários tipos de transparência (Acesso, Localização, Migração, Relocação, Replicação, Concorrência e Falha).
+2. **Transparência:** Ocultar a distribuição dos processos e recursos. Existem vários ==tipos de transparência== %%Por pesquisar, aprofudadamente%% (Acesso, Localização, Migração, Relocação, Replicação, Concorrência e Falha).
 3. **Abertura (Openness):** Capacidade do sistema ser estendido e reimplementado facilmente, geralmente por meio de interfaces bem definidas (APIs e protocolos padrão).
 4. **Escalabilidade:** Capacidade de crescer em tamanho (adicionar usuários/nós), geografia (distâncias maiores) e administração (múltiplas organizações) sem degradação excessiva de desempenho.
 
 ---
 
-## 2. Arquiteturas de Sistemas Distribuídos
+## 2. Arquiteturas de Sistemas Distribuídos %%Por pesquisar: Todas as arquiteturas de sistemas distribuídos%%
 
 A organização lógica e física dos componentes dita como eles interagem.
 
 ### 2.1 Arquitetura Cliente-Servidor
 É o modelo mais clássico. Os processos são divididos em dois papéis distintos:
-- **Servidor:** Um processo que oferece um serviço específico (por exemplo, servidor web, banco de dados). Ele aguarda passivamente pelas requisições.
-- **Cliente:** Um processo que consome os serviços oferecidos. Ele inicia ativamente a comunicação enviando uma requisição ao servidor.
+- **Servidor:** Um processo que oferece um serviço específico (por exemplo, ==servidor web== %%Por pesquisar: Por que é um servidor web (cookies, cache, etc)?%%, banco de dados). Ele aguarda passivamente pelas requisições.
+- **Cliente:** Um processo que consome os serviços oferecidos. Ele inicia ativamente a comunicação enviando uma ==requisição== %%Por pesquisar: Todos os tipos de requisições%% ao servidor.
 
 ```mermaid
 sequenceDiagram
@@ -42,14 +42,14 @@ sequenceDiagram
 ```
 
 **Vantagens:** Gerenciamento centralizado, facilidade de segurança e controle.
-**Desvantagens:** O servidor pode se tornar um gargalo de desempenho e um ponto único de falha (*Single Point of Failure* - SPOF).
+**Desvantagens:** O servidor pode se tornar um gargalo de desempenho e um ponto único de falha (*Single Point of Failure* - SPOF %%Por pesquisar%%).
 
 ### 2.2 Arquitetura Peer-to-Peer (P2P)
 Diferente do modelo cliente-servidor, na arquitetura P2P, todos os nós (chamados de *peers* ou pares) possuem capacidades e responsabilidades simétricas. Um par atua simultaneamente como cliente e servidor.
 
-Existem variações:
+Existem variações %%Por pesquisar%%:
 - **P2P Não Estruturado:** Os nós se conectam de forma arbitrária (ex: Gnutella antigo). A busca por arquivos geralmente é feita por inundação (*flooding*), o que é ineficiente em redes grandes.
-- **P2P Estruturado:** Utiliza topologias organizadas (como anéis, árvores) e Tabelas de Hash Distribuídas (DHTs) como o *Chord*. Isso permite buscas extremamente rápidas e roteamento determinístico.
+- **==P2P Estruturado==:** Utiliza topologias organizadas (como anéis, árvores) e Tabelas de Hash Distribuídas (DHTs) como o *Chord*. Isso permite buscas extremamente rápidas e roteamento determinístico.
 
 **Vantagens:** Alta escalabilidade, tolerância a falhas distribuída (não há servidor central).
 **Desvantagens:** Segurança complexa, difícil gerenciamento e indexação de dados.
@@ -58,9 +58,9 @@ Existem variações:
 
 ## 3. Comunicação Interprocessos
 
-Em sistemas distribuídos, a comunicação via rede substitui a memória compartilhada.
+Em sistemas distribuídos, a comunicação via rede substitui a ==memória compartilhada==.
 
-### 3.1 Sockets (TCP e UDP)
+### 3.1 Sockets (TCP e UDP) %%Por pesquisar: Sockets vs. Webhooks.%%
 O **Socket** é o ponto final (*endpoint*) de um link de comunicação bidirecional entre dois programas rodando na rede. É identificado pela combinação de um **Endereço IP** e um **Número de Porta**.
 
 As aplicações mais comuns utilizam sockets no modelo cliente-servidor, que envolvem três estados fundamentais de "escuta":
