@@ -11,7 +11,7 @@ tipo: "Dashboard"
 
 ```dataview
 TABLE tipo as "Tipo", status as "Estado", file.mtime as "Última Atualização"
-FROM "Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo"
+FROM "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo"
 WHERE file.name != "00 - Sistemas Distribuídos e Programação em Paralelo.md"
 SORT file.name ASC
 ```

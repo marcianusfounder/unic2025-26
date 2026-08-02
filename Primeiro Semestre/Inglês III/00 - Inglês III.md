@@ -11,7 +11,7 @@ tipo: "Dashboard"
 
 ```dataview
 TABLE tipo as "Tipo", status as "Estado", file.mtime as "Última Atualização"
-FROM "Primeiro Semestre/Inglês III"
+FROM "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Inglês III"
 WHERE file.name != "00 - Inglês III.md"
 SORT file.name ASC
 ```

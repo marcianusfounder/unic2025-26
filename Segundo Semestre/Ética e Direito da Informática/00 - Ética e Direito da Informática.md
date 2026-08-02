@@ -11,7 +11,7 @@ tipo: "Dashboard"
 
 ```dataview
 TABLE tipo as "Tipo", status as "Estado", file.mtime as "Última Atualização"
-FROM "Segundo Semestre/Ética e Direito da Informática"
+FROM "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática"
 WHERE file.name != "00 - Ética e Direito da Informática.md"
 SORT file.name ASC
 ```

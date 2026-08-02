@@ -5,7 +5,7 @@ status: "Não Iniciado"
 ---
 # Guia de Estudo Teórico: Engenharia de Software I
 
-Este guia exaustivo aborda os fundamentos, princípios, modelos e práticas da Engenharia de Software, servindo como material definitivo para o estudo universitário da disciplina (baseado nas referências canónicas de Roger S. Pressman e Ian Sommerville).
+Este guia exaustivo aborda os fundamentos, princípios, **modelos** e práticas da Engenharia de Software, servindo como material definitivo para o estudo universitário da disciplina (baseado nas referências canónicas de Roger S. Pressman e Ian Sommerville).
 
 ---
 
