@@ -112,3 +112,99 @@ O National Programme for IT (NPfIT) tentou unificar os registos de saúde do Rei
 ---
 
 Este documento de práticas fornece uma visão realista sobre como as falhas nos princípios da Engenharia de Software têm impactos económicos e organizacionais devastadores, preparando o aluno para evitar estas armadilhas no mercado de trabalho.
+
+---
+
+## Caso Prático 4: Modelagem de Negócios no "Hotel X"
+
+### Enunciado
+O desenvolvimento de um sistema de reservas para o "Hotel X" requer a automação de processos até então manuais. Baseando-se nas entrevistas realizadas pelo Business Designer (DN) com a Gerência:
+
+*   **Identifique regras de negócio** a serem aplicadas.
+*   **Modele os Casos de Uso de Negócios** (UML).
+*   **Esboce o Modelo de Objetos de Negócios** (Diagrama de Classes).
+
+### Resolução Exaustiva Passo-a-Passo
+
+**1. Identificação de Regras de Negócio**
+A partir da transcrição da entrevista, o engenheiro extrai as seguintes restrições intransigentes do sistema:
+*   **Regra de Capacidade:** *"Sempre o quarto solicitado deve ter capacidade para o número de pessoas especificado. Isso não pode ser violado."*
+*   **Regras de Pagamento:** Aceita-se dinheiro, cheque e (após melhorias sugeridas) cartão de crédito.
+*   **Regras de Retenção de Dados:** Os dossiês de hospedagem mantêm-se arquivados durante 1 mês e, posteriormente, no arquivo geral por 1 ano (3 anos na proposta de melhoria para análise de histórico de clientes).
+*   **Regras de Identificação:** O código do dossiê é gerado concatenando a data da reserva e o número do quarto atribuído.
+
+**2. Modelação de Casos de Uso de Negócios (UML)**
+Os processos fundamentais detetados foram: `Reservar Quarto`, `Cancelar Reserva`, `Relatar Avaria` e `Terminar Reserva`.
+*   Ato repetitivo: Para reservar e para realocar um cliente (em caso de avaria irreparável no imediato), a rececionista procura no *Livro de Reservas*. Extrai-se o caso de uso `Procurar Quarto Disponível`.
+*   A relação de `Reservar Quarto` para `Procurar Quarto Disponível` é **\<\<include>>** (obrigatória).
+*   A relação de `Relatar Avaria` para `Procurar Quarto Disponível` é **\<\<extend>>** (condicional: só ocorre se a avaria for severa).
+
+```mermaid
+usecaseDiagram
+    actor Cliente
+    actor Hospede as "Hóspede"
+    
+    usecase "Reservar Quarto" as UC1
+    usecase "Cancelar Reserva" as UC2
+    usecase "Terminar Reserva" as UC3
+    usecase "Relatar Avaria" as UC4
+    usecase "Procurar Quarto Disponível" as UC5
+    
+    Cliente --> UC1
+    Hospede --> UC2
+    Hospede --> UC3
+    Hospede --> UC4
+    
+    UC1 ..> UC5 : <<include>>
+    UC4 ..> UC5 : <<extend>>
+```
+
+**3. Modelo de Objetos de Negócios (Classes Iniciais)**
+O modelo de classes inicial deriva dos substantivos e trabalhadores do processo manual:
+*   **Trabalhador (*Worker*):** `Rececionista`
+*   **Entidades Manipuladas:** `Livro de Reservas`, `Ficha de Hospedagem`, `Ficha de Reserva`, `Dossiê de Hospedagem`, `Comprovativo de Reserva`.
+*   O Dossiê de Hospedagem é, na verdade, uma *agregação* composta pela Ficha de Hospedagem e pela Ficha de Reserva.
+
+```mermaid
+classDiagram
+    class Rececionista {
+        +verificarPassaporte()
+        +registarReserva()
+    }
+    
+    class LivroDeReservas {
+        +estado: String
+        +ano: Integer
+        +adicionarIncidente()
+    }
+    
+    class DossieDeHospedagem {
+        +codigo: String
+        +gerarCodigo()
+    }
+    
+    class FichaDeHospedagem {
+        +nome: String
+        +numeroPassaporte: String
+        +nacionalidade: String
+    }
+    
+    class FichaDeReserva {
+        +numeroPessoas: Integer
+        +dataPartida: Date
+        +tipoQuarto: String
+    }
+    
+    class Comprovativo {
+        +dataPartida: Date
+        +carimbo: Boolean
+    }
+    
+    Rececionista --> LivroDeReservas : atualiza
+    Rececionista --> DossieDeHospedagem : cria
+    Rececionista --> Comprovativo : emite
+    DossieDeHospedagem *-- "1" FichaDeHospedagem
+    DossieDeHospedagem *-- "1" FichaDeReserva
+```
+
+Com este modelo preliminar baseado na Modelagem de Negócios do RUP, a equipa tem uma base sólida de requisitos e lógica de domínio para prosseguir com a arquitetura de software de forma robusta.

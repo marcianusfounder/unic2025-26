@@ -1,140 +1,116 @@
----
-disciplina: "Direção de Sistemas de Informação"
-tipo: "01 - Guia de Estudo Teórico"
-status: "Não Iniciado"
----
-# Direção de Sistemas de Informação (DSI) - Guia de Estudo Teórico Completo
+# Guia de Estudo Teórico: Direção de Sistemas de Informação
 
-## Sumário Executivo
-Este guia foi desenvolvido para fornecer uma compreensão profunda, exaustiva e de nível universitário sobre a **Direção de Sistemas de Informação (DSI)**. Abordaremos desde as bases conceituais do papel do Chief Information Officer (CIO) e do alinhamento estratégico, passando pelos principais frameworks de Governança de TI (COBIT e ITIL), metodologias de análise estratégica (SWOT e Business Model Canvas), até a execução prática de projetos tecnológicos complexos, com foco especial na implementação de soluções *e-Business*.
+## Introdução e Escopo da Disciplina
+A Direção de Sistemas de Informação (DSI) é o elo fundamental entre a estratégia de negócios e as tecnologias de informação que suportam essa estratégia. O estudo de DSI engloba o planejamento, a gestão e a governança de projetos tecnológicos, utilizando metodologias estabelecidas para assegurar a criação de valor, a mitigação de riscos e a otimização de recursos.
+
+Este guia compila os tópicos centrais da disciplina, abordando desde a gestão prática de projetos de e-business até a aplicação de frameworks globais como ITIL, COBIT, PMBOK e PRINCE2.
 
 ---
 
-## 1. Introdução à Direção de Sistemas de Informação (DSI)
+## Parte 1: Gestão de Projetos e Aplicações e-Business
 
-A Direção de Sistemas de Informação deixou de ser uma disciplina meramente técnica e de suporte para se tornar o núcleo da vantagem competitiva nas organizações modernas. A informação é hoje o ativo mais valioso de uma corporação, e a tecnologia é o veículo que transporta, processa e rentabiliza esse ativo.
+### 1.1. Definição Técnica de Projeto
+Um **projeto** é um esforço temporário, empreendido para criar um produto, serviço ou resultado único. Diferencia-se das operações rotineiras (processos) por possuir um início e um fim definidos, um escopo específico e recursos limitados.
 
-### 1.1 O Papel do CIO (Chief Information Officer)
-O CIO moderno atua como uma ponte vital entre a tecnologia e a liderança executiva. As responsabilidades do CIO evoluíram de três formas fundamentais:
-* **De Gestor de Tecnologia a Estrategista de Negócios:** No passado, o CIO focava em manter servidores funcionando e gerir custos (perspectiva operacional). Hoje, o CIO deve antecipar como as tecnologias emergentes (IA, Big Data, Cloud) podem criar novos fluxos de receita, transformar modelos de negócios e melhorar a experiência do cliente (perspectiva estratégica).
-* **Liderança e Comunicação:** O sucesso do CIO está diretamente ligado à sua capacidade de "falar a língua do negócio". Isso significa justificar investimentos em TI não por meio de especificações técnicas (ex: "precisamos de mais terabytes ou banda larga"), mas através de métricas de negócios (ex: "este investimento reduzirá o *time-to-market* em 20% e aumentará a retenção de clientes em 15%").
-* **Agente de Transformação Digital:** O CIO lidera a transformação digital mudando processos arraigados, quebrando silos departamentais e promovendo uma cultura ágil e de inovação contínua, sempre com o forte patrocínio da alta direção (CEO e Conselho de Administração).
+**Principais Motivações para Iniciar um Projeto:**
+- **Demanda do mercado:** Uma nova oportunidade de negócio identificada.
+- **Necessidade de negócio:** Melhoria de processos internos ou redução de custos.
+- **Demanda de um cliente:** Pedido específico para um produto personalizado.
+- **Avanço tecnológico:** Atualização de infraestrutura ou adoção de novas tecnologias (ex: migração para a nuvem).
+- **Necessidade legal:** Adequação a novas legislações ou normativas.
 
----
+### 1.2. Fatores Críticos de Êxito (FCE) em Aplicações e-Business
+Para que um projeto de e-Business seja bem-sucedido, diversos fatores críticos devem ser estritamente observados:
 
-## 2. Alinhamento Estratégico de TI (Strategic IT Alignment)
+1. **Clareza nos Objetivos de Negócios:** O projeto deve focar em aumentar lucros, reduzir gastos ou otimizar processos operacionais. Este objetivo deve ser o "norte" durante todo o ciclo de vida.
+2. **Agregar Valor:** A tecnologia deve ser vista como um **habilitador** e um **facilitador da mudança**, jamais como a condutora cega do negócio. Os ganhos e benefícios devem estar no centro da iniciativa.
+3. **Retroalimentação Rápida e Contínua:** Devido à acelerada mudança tecnológica, os projetos de e-business exigem resultados rápidos para gerar métricas de análise e validar premissas.
+4. **Fechar as Portas (Evitar Gargalos):** As tarefas devem ser concluídas de forma definitiva e correta (fazer certo da primeira vez), evitando retrabalhos constantes que geram gargalos.
+5. **Flexibilidade:** É uma condição *sine qua non*. O enfrentamento a contínuas mudanças mercadológicas e tecnológicas exige que o plano de projeto possua maleabilidade.
+6. **Fixar Desafios Econômicos:** Estabelecer metas financeiras junto aos fornecedores e prestadores de serviços, alinhando interesses.
+7. **Contar com Pequenas Vitórias (Quick Wins):** A pressão por trabalho rápido exige entregas fracionadas que gerem valor imediato, mantendo alta a motivação da equipe.
+8. **Estabelecimento de uma Mudança Cultural:** Implementar um e-business muda a maneira como a organização enxerga o seu próprio modelo de negócio, exigindo aculturamento por parte dos colaboradores.
 
-O Alinhamento Estratégico de TI é o processo contínuo de garantir que a estratégia, os investimentos e as operações de Tecnologia da Informação apoiem direta e integralmente os objetivos institucionais de longo prazo da organização. 
+### 1.3. Fases e Ferramentas de Gestão de Projetos
 
-### 2.1 Modelo de Alinhamento Estratégico de Henderson e Venkatraman
-Este modelo clássico dita que o alinhamento não é apenas "a TI suportando o negócio", mas sim uma via de mão dupla com quatro domínios principais:
-1. **Estratégia de Negócios:** Onde a empresa quer chegar (Mercados, Produtos, Competências essenciais).
-2. **Estratégia de TI:** Como a TI pode transformar ou habilitar novos negócios (Arquitetura, Processos sistêmicos, Novas tecnologias).
-3. **Infraestrutura e Processos Organizacionais:** A estrutura interna da empresa e fluxos de trabalho.
-4. **Infraestrutura e Processos de TI:** A entrega física dos serviços, sistemas, hardware e desenvolvimento.
+A gestão de projetos geralmente se desdobra em fases distintas: Iniciação, Planejamento, Controle/Acompanhamento e Encerramento.
 
-A harmonia entre esses quatro quadrantes previne que a TI construa sistemas brilhantes para problemas que a organização não tem, ou que a organização faça planos que a TI é incapaz de sustentar.
+#### A. Iniciação
+É a fase onde a visão geral é estabelecida.
+- **Seleção do Gestor do Projeto:** O gestor deve ser capaz de informar a direção, comunicar-se com os usuários, planejar, coordenar e controlar orçamentos/riscos, além de liderar a equipe.
+- **Capacitação:** Preparação prévia da equipe para os desafios técnicos.
 
-### 2.2 Desafios do Alinhamento
-* **Silos Culturais:** TI e Negócio frequentemente têm objetivos e culturas divergentes.
-* **Velocidade da Mudança:** A estratégia de negócios muda rapidamente, e os projetos de TI (que costumam ter ciclos longos) podem ficar obsoletos antes de serem entregues.
-* **Mensuração de Valor:** Dificuldade em demonstrar o ROI (Return on Investment) direto de infraestrutura ou segurança.
+#### B. Planejamento
+O planejamento culmina no **Plano de Projeto**, um documento guia (mapa) que descreve o enfoque de desenvolvimento, servindo como base para futuras decisões.
+- **WBS (Work Breakdown Structure / Estrutura de Decomposição do Trabalho):** Uma ferramenta essencial que divide o projeto em pacotes de trabalho menores e gerenciáveis. Sem um escopo bem definido, os custos finais elevam-se, prazos se dilatam e o moral da equipe decai.
+- **Estimativas de Esforço e Custo:**
+  - *Top-Down (De cima para baixo):* Estimativa por analogia usando custos de projetos semelhantes anteriores.
+  - *Bottom-Up (De baixo para cima):* Estimativa a partir de tarefas individuais (na WBS), somando-as para obter o custo total.
+  - *Curva-S:* Representação gráfica do orçamento em função do tempo, mostrando os custos acumulados programados.
+- **Gráfico de Gantt:** Excelente ferramenta para as etapas iniciais do planejamento, pois facilita a visualização de prazos. Sua desvantagem é a dificuldade em mostrar dependências complexas (quando há muitas tarefas) e a omissão de custos.
+- **Diagrama de Precedências (Redes de Projeto):** Métodos que conectam as atividades por setas, demonstrando o caminho crítico e as dependências estruturais que o Gantt oculta.
 
----
+#### C. Controle e Acompanhamento
+- **Garantia da Qualidade:** Uso de revisões (Walkthroughs), inspeções e testes de software.
+- **Tempo e Custo:** Análise do Valor Agregado (Earned Value) para medir o desempenho do cronograma e orçamento.
+- **Desempenho e Avaliação:** Controle técnico, gestão de configuração e mudanças.
+- **Recursos Humanos:** Manutenção da motivação e resolução ágil de conflitos.
 
-## 3. Governança de TI: COBIT e ITIL
-
-Para garantir o alinhamento estratégico, mitigar riscos e assegurar a entrega de valor, as universidades e grandes organizações recorrem a frameworks de Governança de TI. A Governança de TI é um subconjunto da Governança Corporativa e foca em direcionar e controlar a TI da organização.
-
-### 3.1 COBIT (Control Objectives for Information and Related Technologies)
-Criado pela ISACA, o COBIT é o framework padrão-ouro para a **Governança e Gestão de TI**. Ele não diz *como* configurar um servidor, mas *quais* controles devem existir para garantir que a TI cumpra as leis, atenda aos requisitos de negócio e minimize riscos.
-* **Foco:** Governança, Risco e Conformidade (GRC), tomada de decisão, alocação de direitos de decisão e alinhamento estratégico.
-* **Princípios (Baseados no COBIT 2019):** Satisfazer as necessidades das partes interessadas; cobrir a organização de ponta a ponta; aplicar um framework único e integrado; habilitar uma abordagem holística; e separar Governança (direcionamento e monitoramento) de Gestão (planejamento, construção, execução).
-
-### 3.2 ITIL (Information Technology Infrastructure Library)
-Enquanto o COBIT governa, o ITIL gerencia. Desenvolvido no Reino Unido (AXELOS), o ITIL foca em **IT Service Management (ITSM)** — Gestão de Serviços de TI. 
-* **Foco:** Excelência operacional, entrega de serviços consistente, suporte técnico e melhoria contínua.
-* **O Ciclo de Vida do Serviço (Perspectiva ITIL v3/ITIL 4):** Vai desde a Estratégia do Serviço e Desenho, passando pela Transição e Operação, até a Melhoria Contínua do Serviço (Continual Service Improvement). O ITIL 4 foca no "Sistema de Valor de Serviço (SVS)".
-
-### 3.3 A Sinergia COBIT + ITIL
-Na prática universitária e corporativa, COBIT e ITIL são complementares. O **COBIT** determina as políticas gerais, os papéis do conselho e os indicadores de controle de alto nível (KPIs estratégicos). O **ITIL** fornece as diretrizes para que o departamento de TI atinja essas metas operando o Service Desk, gerindo incidentes, problemas e mudanças (KPIs operacionais).
-
----
-
-## 4. Análise de Negócio e Estratégia na TI (SWOT e Business Model Canvas)
-
-Para que o CIO atue estrategicamente, ele deve utilizar ferramentas de gestão para diagnosticar e desenhar soluções.
-
-### 4.1 Business Model Canvas (BMC) Adaptado para TI
-O BMC, criado por Alexander Osterwalder, é uma ferramenta visual que descreve como uma organização cria, entrega e captura valor, dividida em 9 blocos. Em DSI, o BMC mapeia como a TI gera valor:
-1. **Segmentos de Clientes:** Quem são os usuários da TI? (Funcionários internos, clientes finais, parceiros B2B).
-2. **Proposta de Valor:** O que a TI oferece? (Estabilidade, inovação, automação de processos, segurança de dados).
-3. **Canais:** Como os serviços são entregues? (Portais web, Service Desk, App mobile, Intranet).
-4. **Relacionamento com Clientes:** SLA (Service Level Agreements), autoatendimento, gerentes de conta de TI (Business Partners).
-5. **Fluxos de Receita / Orçamento:** Chargeback (cobrança interna), orçamentos alocados, redução de custos indiretos.
-6. **Recursos Principais:** Data centers, cloud, equipe de desenvolvimento (talentos), licenças de software.
-7. **Atividades Chave:** Desenvolvimento de software, manutenção, suporte, cyber-segurança.
-8. **Parcerias Chave:** Fornecedores de Cloud (AWS, Azure), consultorias externas, vendors de ERP.
-9. **Estrutura de Custos:** CapEx (aquisição de equipamentos) vs OpEx (assinaturas SaaS, salários).
-
-### 4.2 Análise SWOT (DAFO) na Gestão de TI
-* **Strengths (Forças):** Infraestrutura robusta, equipe altamente capacitada, cultura de inovação.
-* **Weaknesses (Fraquezas):** Sistemas legados obsoletos, falta de documentação, orçamentos limitados, alta rotatividade (turnover) de desenvolvedores.
-* **Opportunities (Oportunidades):** Novas tecnologias (ex: Inteligência Artificial Generativa), digitalização do setor, parcerias com startups.
-* **Threats (Ameaças):** Ataques cibernéticos, obsolescência tecnológica, novas leis de proteção de dados (GDPR/LGPD).
-
-**A Sinergia (SWOT + BMC):** O CIO utiliza o SWOT para analisar o ambiente e, com base nisso, ajusta o BMC. Se o SWOT revela uma Fraqueza em "Sistemas Legados", o BMC é ajustado na seção "Recursos Principais" (modernização para Cloud) e "Estrutura de Custos" (migrando de CapEx para OpEx).
+#### D. Encerramento
+- **Encerramento Administrativo e de Contratos:** Verificação e documentação dos resultados para obter a aceite formal (sign-off) dos patrocinadores ou clientes, cumprindo eventuais procedimentos contratuais.
 
 ---
 
-## 5. O Projeto Tecnológico: Implantação de Soluções e-Business
+## Parte 2: Frameworks de Governança e Boas Práticas
 
-No contexto contemporâneo, a transformação dos processos centrais e a implementação de projetos tecnológicos como o *e-Business* exigem uma mudança profunda na maneira de fazer negócios. 
+### 2.1. ITIL (Information Technology Infrastructure Library)
+O ITIL é o framework de melhores práticas mais adotado mundialmente para o Gestão de Serviços de TI (ITSM). 
 
-### 5.1 As Dimensões do Projeto e-Business
-Um projeto de e-Business divide-se em duas esferas críticas que devem estar alinhadas:
-1. **Dimensão de Gestão:** Foca em como maximizar o ROI, reduzir custos, aumentar receitas e gerenciar a mudança cultural (resistência dos usuários). Envolve especialistas em negócios.
-2. **Dimensão de Construção:** Foca na implementação técnica (hardware, software, plataformas escaláveis, segurança eletrônica). Envolve especialistas em tecnologia.
+**Módulos e Estrutura (ITIL 4):**
+O ITIL 4 foca em flexibilidade e entrega de valor, deixando de lado os processos rígidos em prol de práticas adaptáveis. Seus principais componentes são:
+- **Sistema de Valor de Serviço (SVS):** Descreve como as partes da organização colaboram para criar valor. Inclui: Princípios Orientadores, Governança, Cadeia de Valor de Serviço, Melhoria Contínua e Práticas.
+- **As 4 Dimensões do Serviço:** Organizações e Pessoas, Informação e Tecnologia, Parceiros e Fornecedores, e Fluxos de Valor/Processos.
+- **Práticas do ITIL (Substituindo os antigos "Processos"):** Existem 34 práticas divididas em Práticas de Gestão Geral, Gestão de Serviços (ex: Gestão de Incidentes, Central de Serviço) e Práticas Técnicas.
 
-### 5.2 O Ciclo de Vida e-Business
-Para não ser "apenas mais um projeto de TI", o ciclo de e-Business compreende quatro fases metodológicas:
-1. **Transformação:** Mudar radicalmente os processos centrais utilizando a Web, Intranet e Extranets. É ser aberto à mudança.
-2. **Criação de Novas Aplicações:** Desenvolver ou integrar softwares de maneira rápida e ágil, reutilizando código e sistemas existentes em vez de "reinventar a roda".
-3. **Obtenção de um Ambiente Adequado:** Criar uma infraestrutura (redes, segurança, servidores) capaz de ser gerida eficientemente, que seja segura e escalável de acordo com o crescimento do e-Business.
-4. **Conceber a Estratégia:** Capitalizar o conhecimento acumulado; criar objetivos financeiros (aumentar margens) e estratégicos (elevar posição de mercado, baixar custos, melhorar CRM).
+**Aplicação Conforme o Tamanho da Organização:**
+O ITIL não é "tudo ou nada". O princípio *"Comece onde você está"* dita sua implementação.
+- **Pequenas Empresas:** Adotam um subconjunto de práticas cruciais (ex: Central de Serviço e Gestão de Incidentes). Profissionais frequentemente acumulam funções, e o foco é organização imediata e estabilidade.
+- **Médias Empresas:** Necessitam de maior formalização para lidar com o crescimento (escalabilidade), implementando a Gestão de Mudanças, Gestão de Problemas e catálogos de serviços.
+- **Grandes Corporações:** Utilizam o ITIL em sua plenitude para garantir a governança corporativa. Adoção do SIAM (Service Integration and Management) para lidar com uma vasta rede de fornecedores terceirizados.
 
-### 5.3 Análise do Ambiente: Forças de Porter e Demografia Web
-A formulação da estratégia e-Business deve considerar fatores externos usando o **Modelo das Cinco Forças de Porter**:
-1. *Ameaça de entrada de novos concorrentes:* Barreiras digitais.
-2. *Rivalidade entre os concorrentes:* A agressividade dos competidores no mercado online.
-3. *Poder de negociação dos fornecedores:* Plataformas B2B, integração.
-4. *Poder de negociação dos compradores:* Ex: A facilidade de comparar preços online (cesta de compras rápida).
-5. *Ameaça de produtos substitutos:* Tecnologias alternativas ou canais tradicionais.
+### 2.2. COBIT (Control Objectives for Information and Related Technologies)
+Criado pela ISACA, o COBIT é o principal framework global focado em **Governança e Gestão de TI Corporativa**. Seu objetivo não é apenas gerir serviços (como o ITIL), mas garantir que os investimentos de TI gerem valor de negócio real, gerenciando riscos corporativos de TI e garantindo a conformidade.
 
-Além de Porter, a **Demografia da Web** deve ser analisada para entender o perfil, cultura e comportamento do consumidor digital atual.
+**Domínios do COBIT:**
+O modelo de referência do COBIT organiza seus processos em cinco domínios macro (a base se consolidou do COBIT 5 ao 2019):
+1. **EDM (Evaluate, Direct and Monitor - Avaliar, Dirigir e Monitorar):** Pertence à esfera da Governança (Conselho de Administração). Avalia necessidades, direciona investimentos e monitora o cumprimento estratégico.
+2. **APO (Align, Plan and Organize - Alinhar, Planejar e Organizar):** Gestão estratégica da TI. Como as táticas de TI se alinham ao negócio.
+3. **BAI (Build, Acquire and Implement - Construir, Adquirir e Implementar):** Execução de projetos, aquisição e desenvolvimento de novas soluções de TI.
+4. **DSS (Deliver, Service and Support - Entregar, Servir e Suportar):** Execução das operações do dia-a-dia de TI (onde o ITIL mais se sobrepõe e complementa o COBIT).
+5. **MEA (Monitor, Evaluate and Assess - Monitorar, Avaliar e Avaliar):** Monitoramento interno de desempenho e controle de conformidade.
 
-### 5.4 Os 3 Processos Chave (Retorno de Investimento - ROI)
-Um ambiente e-Business exitoso foca em transformar três grandes processos:
-1. **Gestão das Relações com o Cliente (CRM - Customer Relationship Management):** Foco total no cliente ("o cliente é rei"). Baseia-se em inteligência sobre o cliente (coleta de dados), interatividade (diálogos bidirecionais), fidelização, vendas cruzadas e personalização massiva (marketing *1-to-1*).
-2. **Gestão da Cadeia de Fornecimentos (SCM - Supply Chain Management):** Integração online da produção e logística. Foca em Time-to-Market (tempo de comercialização rápido), partilha de informação (ERP), redução de custos de estocagem, entrega pontual e comunidades Web colaborativas.
-3. **Comércio Eletrônico (E-commerce):** Permite o autoatendimento dos clientes (eles mesmos processam seus pedidos), reduzindo o custo de transação drasticamente e disponibilizando serviços 24/7/365.
+```mermaid
+pie title Foco dos Domínios COBIT
+  "Governança (EDM)" : 20
+  "Gestão Estratégica (APO)" : 20
+  "Gestão de Projetos/Construção (BAI)" : 20
+  "Operações/Suporte (DSS)" : 20
+  "Monitoramento e Auditoria (MEA)" : 20
+```
 
-### 5.5 Fatores de Êxito da Arquitetura e-Business
-Para suportar tudo isso, a arquitetura de TI desenhada pelo CIO deve ser:
-* **Particionável:** Componentes fragmentados, mas integrados e consistentes, permitindo fácil manutenção sem derrubar todo o sistema.
-* **Escalável:** Capacidade de crescer dinamicamente conforme aumenta o número de usuários ou transações, mantendo a performance.
-* **Flexível:** Arquitetura aberta, permitindo rápida integração de novas tecnologias e parceiros.
-* **Confiável e Seguro:** Suporte a transações íntegras (ACID), mantendo a integridade dos dados e proteção contra ataques.
-* **Disponível:** 99.99% de *uptime* (24 horas por dia, 365 dias por ano). Redundância e recuperação rápida em caso de queda.
-* **Acessível:** Funcionamento agnóstico a dispositivos (Desktop, Mobile, Tablets).
-* **Gerenciável:** Monitoramento centralizado de várias plataformas através de ferramentas padronizadas.
-* **Recuperável:** Capacidade nativa de detecção e correção de erros, com rotinas de backup e Disaster Recovery (Recuperação de Desastres).
+**Modelo de Maturidade / Capacidade:**
+- No passado (COBIT 4.1 e 5), utilizava-se uma escala de maturidade de processos clássica (0 a 5).
+- No **COBIT 2019**, adota-se um modelo de desempenho baseado no CMMI (Capability Maturity Model Integration). Avaliam-se os níveis de **capacidade** para atividades específicas (de 0 a 5), permitindo que a organização estabeleça níveis alvos distintos para cada processo, utilizando "Fatores de Desenho" para costumizar sua governança.
 
----
+### 2.3. PRINCE2 versus PMBOK
+Ambos são referências vitais para gerenciamento de projetos, mas com naturezas profundamente distintas.
 
-## 6. Conclusão
+| Característica | PMBOK (PMI) | PRINCE2 (AXELOS) |
+| :--- | :--- | :--- |
+| **Natureza** | **Descritivo**. Um corpo de conhecimento com boas práticas, técnicas e ferramentas. | **Prescritivo**. Uma metodologia baseada em processos estruturados, passo a passo. |
+| **Foco Principal** | Competências, conhecimentos técnicos e habilidades do Gerente de Projetos. | Governança corporativa, definição de papéis e foco constante no **Business Case** (justificativa de negócio). |
+| **Escopo e Flexibilidade** | Alta flexibilidade. O gerente seleciona quais ferramentas aplicar. | Rígido na estrutura de decisão. Foca no "como" o projeto será dirigido e governado. |
+| **Tomada de Decisão** | Concentra poder e responsabilidade no Gerente de Projetos. | Descentraliza o poder. O Gerente de Projetos subordina-se a um *Project Board* (Comitê Diretor). |
 
-A Direção de Sistemas de Informação é, portanto, o epicentro estratégico da empresa moderna. O projeto tecnológico não pertence apenas ao departamento de TI, mas sim a toda a organização ("O projeto é de toda a organização"). Exige-se uma visão bifocal do CIO: entender profundamente as métricas de negócio, o marketing relacional e a gestão de cadeias de valor, ao mesmo tempo que domina as exigências arquitetônicas (escalabilidade, segurança, disponibilidade) e os frameworks de governança (COBIT e ITIL). Sem essa integração total entre tecnologia e negócio, qualquer projeto de e-Business está fadado ao fracasso.
-
----
-*Este material serve como base para a disciplina DSI, combinando as teorias abordadas em sala de aula com os frameworks universitários contemporâneos de TI e Negócios.*
+**Qual Escolher?**
+Em geral, eles não são excludentes, mas complementares. Uma organização altamente regulamentada e complexa pode usar a **estrutura de governança do PRINCE2** para comandar a aprovação de fases, e usar as **técnicas do PMBOK** no dia-a-dia de planejamento e estimativas de custos.

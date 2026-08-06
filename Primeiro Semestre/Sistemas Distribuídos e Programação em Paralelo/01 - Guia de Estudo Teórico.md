@@ -1,167 +1,182 @@
----
-disciplina: Sistemas Distribuídos e Programação em Paralelo
-tipo: 01 - Guia de Estudo Teórico
-status: Não Iniciado
----
 # Guia de Estudo Teórico: Sistemas Distribuídos e Programação em Paralelo
 
-Bem-vindo ao guia exaustivo de estudos sobre **Sistemas Distribuídos e Programação em Paralelo**. Este material foi estruturado em nível universitário para oferecer uma compreensão profunda e detalhada dos fundamentos, ==arquiteturas, algoritmos==, comunicação, ==segurança e paradigmas paralelos==. 
+Este guia compreensivo foi desenvolvido para cobrir exaustivamente todos os tópicos fundamentais e avançados da disciplina de Sistemas Distribuídos e Programação em Paralelo. 
+
+## Índice
+1. [Introdução aos Sistemas Distribuídos](#1-introdução-aos-sistemas-distribuídos)
+2. [Modelos Arquiteturais](#2-modelos-arquiteturais)
+3. [Comunicação e Protocolos](#3-comunicação-e-protocolos)
+4. [Sincronização e Tempo em Sistemas Distribuídos](#4-sincronização-e-tempo-em-sistemas-distribuídos)
+5. [Arquitetura Orientada a Serviços (SOA) e Web Services](#5-arquitetura-orientada-a-serviços-soa-e-web-services)
+6. [Segurança em Sistemas Distribuídos](#6-segurança-em-sistemas-distribuídos)
+7. [Computação em Nuvem e MapReduce](#7-computação-em-nuvem-e-mapreduce)
 
 ---
 
 ## 1. Introdução aos Sistemas Distribuídos
 
-Segundo Andrew S. Tanenbaum, um **Sistema Distribuído** é definido como *"um conjunto de computadores independentes que se apresentam aos seus usuários como um ==sistema único e coerente=="*. 
+### 1.1 Definição
+Segundo Andrew Tanenbaum, um **Sistema Distribuído** é definido como "um conjunto de computadores independentes que se apresentam aos seus usuários como um sistema único e coerente". Em essência, as máquinas (nós) são interconectadas por uma rede, comunicam-se primariamente através de troca de mensagens e colaboram para alcançar um objetivo comum, compartilhando um estado e recursos.
 
-A essência de um sistema distribuído é <u>esconder a complexidade</u> (distribuição física, falhas parciais, heterogeneidade de hardware e software) do usuário final. O usuário não precisa saber em qual servidor seus dados estão fisicamente armazenados ou qual nó de processamento está resolvendo sua requisição.
+### 1.2 Principais Características (Vantagens e Desvantagens)
 
-### Objetivos Principais
-1. **Compartilhamento de Recursos:** Facilitar o acesso a recursos remotos de forma controlada.
-2. **Transparência:** Ocultar a distribuição dos processos e recursos. Existem vários ==tipos de transparência== %%Por pesquisar, aprofudadamente%% (Acesso, Localização, Migração, Relocação, Replicação, Concorrência e Falha).
-3. **Abertura (Openness):** Capacidade do sistema ser estendido e reimplementado facilmente, geralmente por meio de interfaces bem definidas (APIs e protocolos padrão).
-4. **Escalabilidade:** Capacidade de crescer em tamanho (adicionar usuários/nós), geografia (distâncias maiores) e administração (múltiplas organizações) sem degradação excessiva de desempenho.
+**Vantagens:**
+- **Compartilhamento de Recursos:** Elementos de hardware (armazenamento, processamento) e software podem ser utilizados de maneira conjunta.
+- **Concorrência:** Múltiplos processos são executados simultaneamente em diferentes nós, maximizando o desempenho.
+- **Escalabilidade:** É a capacidade do sistema lidar com um aumento de carga (horizontal - adicionando mais nós, ou vertical - melhorando o hardware de um nó). Sistemas distribuídos escalam horizontalmente com facilidade.
+- **Tolerância a Falhas:** A redundância permite que o sistema continue operando mesmo se um ou mais nós falharem. Não há um ponto único de falha (*Single Point of Failure - SPOF*).
+- **Independência Tecnológica:** Componentes podem ser construídos usando diferentes linguagens de programação e rodar em diferentes sistemas operacionais.
+
+**Desvantagens:**
+- **Complexidade:** Gerenciar concorrência, latência de rede, e sincronização de estado é substancialmente mais complexo que em sistemas centralizados.
+- **Segurança:** Com múltiplos nós se comunicando por uma rede (muitas vezes pública), a superfície de ataque é significativamente expandida.
+- **Gerenciamento e Troubleshooting:** Identificar erros (debugging) torna-se difícil. Falhas de rede ou atrasos podem causar comportamentos imprevisíveis.
+
+### 1.3 Transações e Propriedades ACID em Sistemas Distribuídos (STP)
+Sistemas de Processamento de Transações exigem garantias rigorosas:
+- **Atômicas:** Uma transação ocorre inteiramente ou não ocorre (indivisível).
+- **Consistentes:** Transições de estado devem preservar as invariantes lógicas do sistema.
+- **Isoladas:** Transações concorrentes não interferem umas nas outras.
+- **Duráveis:** Uma vez validada (commit), a alteração é permanente.
 
 ---
 
-## 2. Arquiteturas de Sistemas Distribuídos %%Por pesquisar: Todas as arquiteturas de sistemas distribuídos%%
+## 2. Modelos Arquiteturais
 
-A organização lógica e física dos componentes dita como eles interagem.
+A arquitetura define como os componentes do sistema são distribuídos e como interagem.
 
 ### 2.1 Arquitetura Cliente-Servidor
-É o modelo mais clássico. Os processos são divididos em dois papéis distintos:
-- **Servidor:** Um processo que oferece um serviço específico (por exemplo, ==servidor web== %%Por pesquisar: Por que é um servidor web (cookies, cache, etc)?%%, banco de dados). Ele aguarda passivamente pelas requisições.
-- **Cliente:** Um processo que consome os serviços oferecidos. Ele inicia ativamente a comunicação enviando uma ==requisição== %%Por pesquisar: Todos os tipos de requisições%% ao servidor.
+A mais tradicional arquitetura. 
+- **Cliente:** Inicia as requisições. O cliente precisa conhecer a localização (IP/Porta) do servidor.
+- **Servidor:** Fica em estado de escuta passiva, processa requisições e retorna respostas. Não precisa conhecer previamente o cliente.
+- Pode ser dividida em **Thin Client** (cliente magro - apenas apresentação) ou **Fat Client** (cliente gordo - processa lógica localmente).
 
 ```mermaid
 sequenceDiagram
-    participant Cliente
-    participant Servidor
-    Cliente->>Servidor: 1. Envia Requisição (Request)
-    Note right of Servidor: 2. Processa a Requisição
-    Servidor-->>Cliente: 3. Retorna Resposta (Reply)
+    participant C as Cliente
+    participant S as Servidor
+    C->>S: Envia Requisição (Ex: GET /dados)
+    activate S
+    S-->>S: Processa Regras de Negócio e Banco de Dados
+    S->>C: Retorna Resposta (Ex: JSON)
+    deactivate S
 ```
 
-**Vantagens:** Gerenciamento centralizado, facilidade de segurança e controle.
-**Desvantagens:** O servidor pode se tornar um gargalo de desempenho e um ponto único de falha (*Single Point of Failure* - SPOF %%Por pesquisar%%).
-
 ### 2.2 Arquitetura Peer-to-Peer (P2P)
-Diferente do modelo cliente-servidor, na arquitetura P2P, todos os nós (chamados de *peers* ou pares) possuem capacidades e responsabilidades simétricas. Um par atua simultaneamente como cliente e servidor.
+Nesta arquitetura, a distinção entre cliente e servidor desaparece. Todo nó (Peer) atua simultaneamente como cliente e servidor (fornece e consome recursos).
+- **P2P Puro:** Não há servidores centrais (ex: Gnutella, Bitcoin).
+- **P2P Híbrido:** Um servidor central indexa onde os arquivos estão, mas a transferência de dados ocorre diretamente entre os pares (ex: BitTorrent, Napster).
+- Usa mecanismos como **PNRP (Peer Name Resolution Protocol)** ou DHT (Distributed Hash Tables) para localizar pares na malha (mesh).
 
-Existem variações %%Por pesquisar%%:
-- **P2P Não Estruturado:** Os nós se conectam de forma arbitrária (ex: Gnutella antigo). A busca por arquivos geralmente é feita por inundação (*flooding*), o que é ineficiente em redes grandes.
-- **==P2P Estruturado==:** Utiliza topologias organizadas (como anéis, árvores) e Tabelas de Hash Distribuídas (DHTs) como o *Chord*. Isso permite buscas extremamente rápidas e roteamento determinístico.
-
-**Vantagens:** Alta escalabilidade, tolerância a falhas distribuída (não há servidor central).
-**Desvantagens:** Segurança complexa, difícil gerenciamento e indexação de dados.
-
----
-
-## 3. Comunicação Interprocessos
-
-Em sistemas distribuídos, a comunicação via rede substitui a ==memória compartilhada==.
-
-### 3.1 Sockets (TCP e UDP) %%Por pesquisar: Sockets vs. Webhooks.%%
-O **Socket** é o ponto final (*endpoint*) de um link de comunicação bidirecional entre dois programas rodando na rede. É identificado pela combinação de um **Endereço IP** e um **Número de Porta**.
-
-As aplicações mais comuns utilizam sockets no modelo cliente-servidor, que envolvem três estados fundamentais de "escuta":
-1. **Escuta de Recebimento (`listen`):** O servidor se coloca em estado passivo, aguardando pedidos de conexão.
-2. **Escuta de Conexão (`accept`):** O servidor aceita a conexão, criando um novo socket dedicado exclusivamente àquele cliente, liberando o socket principal para novas conexões.
-3. **Escuta de Dados (`recv`/`send`):** Ocorre o intercâmbio de dados.
-
-**TCP (Transmission Control Protocol):** Orientado a conexão, confiável, garante entrega em ordem. (Ex: Web, E-mail, Transferência de Arquivos).
-**UDP (User Datagram Protocol):** Não orientado a conexão, não garante entrega, mais rápido. (Ex: Streaming de vídeo, VoIP, Jogos online).
-
-### 3.2 Chamada de Procedimento Remoto (RPC - Remote Procedure Call)
-O RPC é uma abstração que permite a um programa executar um procedimento (função) em outro espaço de endereçamento (em outro computador), codificando-o como se fosse uma chamada de função local.
-- **Stubs:** O cliente chama um "client stub" (que empacota os parâmetros na rede). O servidor tem um "server stub" (que desempacota e chama a função real).
-- O processo de empacotamento é chamado de **Marshalling** (serialização).
-
-### 3.3 Invocação de Método Remoto (RMI - Remote Method Invocation)
-RMI é a evolução orientada a objetos do RPC. Enquanto o RPC foca em funções C, o RMI (como o Java RMI) permite que um objeto em uma JVM invoque métodos em um objeto residente em outra JVM. Ele suporta a passagem de objetos inteiros por valor ou por referência.
+### 2.3 Middleware
+O middleware atua como o "encanamento" do sistema distribuído. É uma camada de software (ou API) que esconde a heterogeneidade da rede, sistema operacional e linguagens de programação.
+- **Exemplos:** Message Brokers (RabbitMQ), Object Request Brokers (CORBA), Drivers de Banco de Dados (JDBC).
 
 ---
 
-## 4. Sincronização e Relógios Lógicos
+## 3. Comunicação e Protocolos
 
-O tempo é fundamental para ordenar eventos. No entanto, em sistemas distribuídos, **não existe um relógio global**. Relógios físicos de diferentes máquinas sofrem de *drift* (desvio de relógio).
+A comunicação é a espinha dorsal. Sem memória compartilhada física, os processos usam a rede.
 
-### 4.1 A Relação "Aconteceu-Antes" (Happens-Before)
-Proposta por Leslie Lamport (1978), a relação "aconteceu-antes" ($\rightarrow$) captura a causalidade dos eventos sem depender de relógios físicos.
-- Se $a$ e $b$ são eventos no mesmo processo, e $a$ ocorre antes de $b$, então $a \rightarrow b$.
-- Se $a$ é o envio de uma mensagem e $b$ é o seu recebimento, então $a \rightarrow b$.
-- Transitividade: Se $a \rightarrow b$ e $b \rightarrow c$, então $a \rightarrow c$.
-- Se $a$ não aconteceu antes de $b$, e $b$ não aconteceu antes de $a$, eles são **concorrentes**.
+### 3.1 Camadas de Rede e TCP vs UDP
+Baseado no modelo TCP/IP:
+- **TCP (Transmission Control Protocol):** Orientado a conexão. Garante a entrega dos dados, controle de fluxo e controle de congestionamento. É confiável, mas possui maior latência.
+- **UDP (User Datagram Protocol):** Não orientado a conexão. Envia datagramas velozmente mas sem garantias de ordem ou entrega. Usado para streaming, VoIP, e sistemas onde a velocidade suplanta a precisão absoluta.
 
-### 4.2 Relógios Lógicos de Lamport
-Para garantir uma ordem lógica, cada processo $P_i$ mantém um contador $C_i$ (seu Relógio Lógico), inicializado em 0.
-**Regras de Atualização:**
-1. Antes de executar qualquer evento (interno, envio ou recebimento), o processo incrementa: $C_i = C_i + 1$.
-2. Quando $P_i$ envia uma mensagem $m$, ele anexa $C_i$ à mensagem ($m, C_i$).
-3. Quando $P_j$ recebe $(m, C_{msg})$, ele atualiza seu relógio: $C_j = \max(C_j, C_{msg})$, e então aplica a regra 1 (incrementa seu relógio para o evento de recepção).
+### 3.2 Sockets de Rede
+Um socket é a porta de entrada para a rede. É constituído por **Endereço IP + Porta**.
+Os 3 estados de um socket servidor TCP:
+1. **Listen:** Escutando conexões.
+2. **Accept:** Aceita uma conexão e cria um *novo socket* dedicado para aquele cliente.
+3. **Send/Recv:** Troca de dados bidirecional.
 
-Esse mecanismo garante que, se $a \rightarrow b$, então $C(a) < C(b)$. (Nota: O inverso não é necessariamente verdadeiro. Para resolver o inverso, usam-se **Relógios Vetoriais**).
+### 3.3 RPC (Remote Procedure Call)
+O RPC permite que um programa execute um procedimento/função em outro computador como se fosse uma chamada de função local.
+- O **Stub** (no cliente) empacota os parâmetros (Marshaling) e envia pela rede.
+- O **Skeleton** (no servidor) desempacota (Unmarshaling), executa a função local, empacota o resultado e devolve.
+
+### 3.4 Comunicação Baseada em Mensagens
+Em vez de chamadas síncronas bloqueantes, usa-se mensagens enviadas e armazenadas em filas (*Message Queues*).
+- **Vantagens:** Desacoplamento espacial (emissor e receptor não precisam se conhecer) e temporal (não precisam estar ativos ao mesmo tempo). Tolerância a falhas.
+- **Exemplos:** RabbitMQ, Apache Kafka, Amazon SQS.
 
 ---
 
-## 5. Tolerância a Falhas
+## 4. Sincronização e Tempo em Sistemas Distribuídos
 
-Sistemas distribuídos devem operar mesmo quando parte deles falha.
-- **Falha de Crash (Omissão):** O componente para de funcionar (ex: servidor desliga).
-- **Falha Bizantina:** O componente age de maneira arbitrária ou maliciosa, enviando dados incorretos.
+Em sistemas distribuídos, não existe um "relógio global". Cada máquina possui seu oscilador de quartzo com taxas de desvio (drift) diferentes.
 
-### Mascaramento de Falhas e Redundância
-A chave para a tolerância é esconder a falha do resto do sistema por meio de **redundância**:
-- **Redundância de Informação:** Adicionar bits de paridade, códigos ECC.
-- **Redundância de Tempo:** Repetir a operação (ex: retransmissões do TCP).
-- **Redundância Física:** Utilizar múltiplos servidores para fazer o mesmo trabalho (replicação).
+### 4.1 Relógios Lógicos de Lamport
+Leslie Lamport propôs que não precisamos saber a hora exata que um evento ocorreu, mas sim a **ordem** em que os eventos aconteceram (relação "happens-before" ou $\rightarrow$).
+
+**Algoritmo de Lamport:**
+1. Cada processo $P_i$ mantém um contador local $C_i$, inicializado em 0.
+2. Antes de executar um evento (instrução, envio de mensagem), $P_i$ incrementa $C_i = C_i + 1$.
+3. Quando $P_i$ envia uma mensagem $m$, ele anexa o tempo lógico: $(m, C_i)$.
+4. Quando um processo $P_j$ recebe $(m, C_i)$, ele atualiza seu relógio: $C_j = \max(C_j, C_i) + 1$.
+
+Isso garante uma ordenação causal dos eventos, fundamental para sistemas de transações, chats distribuídos e resolução de conflitos.
+
+---
+
+## 5. Arquitetura Orientada a Serviços (SOA) e Web Services
+
+### 5.1 Conceitos de SOA
+O aplicativo é decomposto em serviços autônomos, sem estado (*stateless*) e fracamente acoplados (*loosely coupled*). Os serviços expõem interfaces padronizadas (Contratos).
+
+### 5.2 SOAP vs REST
+
+- **SOAP (Simple Object Access Protocol):** 
+  - Baseado inteiramente em XML.
+  - Possui forte rigor de tipagem e contratos formais definidos em **WSDL (Web Services Description Language)**.
+  - Suporta os complexos protocolos `WS-*` (WS-Security, WS-AtomicTransaction).
+
+- **REST (Representational State Transfer):**
+  - Estilo arquitetural focado em recursos (URLs).
+  - Usa os métodos padrão do HTTP (GET, POST, PUT, DELETE).
+  - Mais leve, utiliza predominantemente JSON em vez de XML. É amplamente adotado no desenvolvimento web moderno e microserviços.
 
 ---
 
 ## 6. Segurança em Sistemas Distribuídos
 
-Segurança em sistemas distribuídos é a prática de proteger sistemas com múltiplos componentes interconectados contra ameaças, garantindo **confidencialidade**, **integridade**, **disponibilidade** e **não-repúdio**.
+Dado que os dados trafegam por múltiplos links de rede, a segurança baseia-se em quatro pilares:
+1. **Confidencialidade:** Evitar vazamento.
+2. **Integridade:** Impedir alteração não autorizada.
+3. **Disponibilidade:** Garantir que o sistema opere (combate a DoS).
+4. **Não-Repúdio:** Garantir autoria das ações.
 
-Devido à vasta superfície de ataque e a constante troca de mensagens entre componentes separados fisicamente, a segurança torna-se um pilar crítico.
+### 6.1 Autenticação vs Autorização
+- **Autenticação:** Quem é você? (Login, Senha, Biometria, MFA/2FA, Tokens).
+- **Autorização:** O que você pode fazer? (RBAC - Controle de Acesso Baseado em Papéis, ACLs, OAuth, JWT).
 
-### 6.1 Autenticação e Autorização
-- **Autenticação:** Verifica *quem você é*. Utiliza fatores como senhas (o que você sabe), biometria (o que você é) e tokens (o que você possui). Em sistemas modernos, MFA (Autenticação de Múltiplos Fatores) é o padrão.
-- **Autorização:** Define *o que você pode fazer*. Ocorre após a autenticação. Utiliza mecanismos como ACLs (Listas de Controle de Acesso) e RBAC (Controle de Acesso Baseado em Papéis). Em microsserviços, tokens como JWT (JSON Web Tokens) e OAuth2 são comuns para propagar identidade e permissões.
+### 6.2 Criptografia e TLS/SSL
+A comunicação deve ser protegida contra ataques *Man-in-the-Middle (MitM)* usando HTTPS e TLS.
+- O Handshake TLS estabelece a identidade via **Certificados Digitais**.
+- Usa criptografia assimétrica (chaves pública/privada) para trocar de modo seguro as chaves simétricas (chaves de sessão) que farão a encriptação rápida do tráfego.
 
-### 6.2 Comunicação Segura: SSL/TLS
-A segurança de dados em trânsito é assegurada pelos protocolos criptográficos TLS (sucessor moderno e seguro do SSL).
-- O TLS evita ataques interceptadores (Man-in-the-Middle) usando criptografia assimétrica (chaves públicas/privadas) durante o *Handshake* para negociar uma chave simétrica de sessão.
-- **Certificados Digitais:** Assinados por Autoridades Certificadoras (CAs), provam a identidade de servidores, mitigando ataques de *spoofing* (personificação).
-
-### 6.3 Ataques Comuns e Mitigação
-1. **Negação de Serviço (DoS/DDoS):** Sobrecarrega o sistema de requisições, comprometendo a *disponibilidade*.
-   - *Mitigação:* Balanceamento de carga, Rate Limiting, Filtros de tráfego (Firewalls) e serviços como Cloudflare/AWS Shield.
-2. **Man-in-the-Middle (MitM):** O atacante intercepta ou manipula a comunicação (ex: ARP Poisoning, Wi-Fi falso). Compromete a *confidencialidade* e a *integridade*.
-   - *Mitigação:* Uso restrito de HTTPS/TLS, VPNs e Autenticação robusta (MFA).
-
----
-
-## 7. Introdução à Programação Paralela
-
-A programação paralela divide um grande problema em tarefas menores que podem ser executadas simultaneamente, visando redução do tempo de processamento (*speedup*).
-
-### 7.1 Paradigmas de Arquitetura de Memória
-
-| Paradigma | Descrição | Tecnologia Exemplo |
-| :--- | :--- | :--- |
-| **Memória Compartilhada** | Todas as threads têm acesso ao mesmo espaço de memória. Facilita a comunicação, mas exige sincronização (locks/mutexes) para evitar condições de corrida (*race conditions*). | OpenMP, Pthreads |
-| **Memória Distribuída** | Cada processo possui sua própria memória local isolada. A comunicação ocorre explicitamente pelo envio/recebimento de mensagens pela rede. | MPI |
-| **Heterogênea (Data-Parallel)** | Offload de processamento intensivo para aceleradores, executando milhares de threads menores em blocos massivos de dados simultaneamente (SIMD). | CUDA, OpenCL |
-
-### 7.2 Principais Ferramentas e Frameworks
-
-**MPI (Message Passing Interface):** 
-O padrão de ouro para programação em memória distribuída (clusters/supercomputadores). Processos não compartilham memória. Funções como `MPI_Send` e `MPI_Recv` são usadas para troca explícita de dados. É altamente escalável.
-
-**OpenMP:** 
-Padrão baseado em diretivas de compilador (ex: `#pragma omp parallel for` em C/C++) para arquiteturas de memória compartilhada (CPU multi-core). Extremamente amigável, pois permite adicionar paralelismo em loops existentes com poucas alterações de código.
-
-**CUDA:** 
-Plataforma da NVIDIA para programação paralela massiva em GPUs (Unidades de Processamento Gráfico). A CPU (*Host*) envia dados para a memória da GPU (*Device*), que dispara uma grade (*grid*) de milhares de blocos e threads para processar matrizes, vetores ou deep learning de forma simultânea. Requer o domínio do conceito de hierarquia de memória da GPU e execução SIMT (Single Instruction, Multiple Threads).
+### 6.3 Ataques Comuns
+- **DDoS (Distributed Denial of Service):** Sistemas botnet sobrecarregam um serviço. *Mitigação:* Firewalls de aplicação (WAF), Rate Limiting, Balanceamento de carga (CDN).
+- **MitM:** Interceptação de tráfego (Ex: ARP Poisoning, Rogue Wi-Fi). *Mitigação:* Uso restrito de HTTPS/TLS e VPNs.
 
 ---
-*Este documento é uma síntese profunda de sistemas distribuídos e paralelismo. Para consolidação deste conhecimento, veja o documento "02 - Exercícios e Práticas.md".*
+
+## 7. Computação em Nuvem e MapReduce
+
+### 7.1 Computação em Nuvem
+A nuvem é a entrega de recursos computacionais (servidores, armazenamento, bancos de dados, software) pela internet, com escalabilidade elástica.
+
+### 7.2 O Paradigma MapReduce
+Para processamento de enormes volumes de dados distribuídos (Big Data).
+- **Map:** Filtra, processa e extrai informações locais em diversos nós paralelos emitindo pares de `chave-valor`.
+- **Shuffle/Sort:** O framework agrupa todos os valores associados à mesma chave.
+- **Reduce:** Nós de redução agregam os valores das chaves para produzir o resultado final.
+
+```mermaid
+graph LR
+    A[Dados de Entrada] --> B[Split]
+    B --> C[Map Workers]
+    C --> D[Shuffle e Grouping]
+    D --> E[Reduce Workers]
+    E --> F[Saída Final]
+```
