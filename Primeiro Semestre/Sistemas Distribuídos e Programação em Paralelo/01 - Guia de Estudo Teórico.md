@@ -74,7 +74,7 @@ O middleware atua como o "encanamento" do sistema distribuído. É uma camada de
 
 ---
 
-## 3. Comunicação e Protocolos
+## 3. Comunicação e Protocolos7y
 
 A comunicação é a espinha dorsal. Sem memória compartilhada física, os processos usam a rede.
 
