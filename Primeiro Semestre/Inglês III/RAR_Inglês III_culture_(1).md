@@ -8,55 +8,55 @@ origem: "Rar Inglês Iii Culture (1)"
 > [!info] Fonte Original
 > Este documento é uma transcrição direta e intocada da fonte original, convertida em Markdown para retenção de 100% da essência e indexação de pesquisa.
 
-&RS\ULJKW.5HDGHUKWWSZZZNUHDGHUFRP
-&URVV&XUULFXODU5HDGLQJ&RPSUHKHQVLRQ:RUNVKHHWV&RI
-2XUFXOWXUHLVWKHV\VWHPZHXVHWREXLOGRXULGHQWLW\
-$OOOLYLQJFUHDWXUHVDUHSDUWRIDFXOWXUH(YHQDQLPDOVKDYHD
-FXOWXUH6RZKDWLVFXOWXUH",W¶VWKHZD\ZHEHKDYHLQDJURXS
-,WEHJLQVZLWKHDFKLQGLYLGXDOIDPLO\:LWKLQRXUIDPLOLHVZHGR
-WKLQJVWREXLOGUHODWLRQVKLSVZLWKHDFKRWKHU7KLVFDQLQFOXGH
-URXWLQHVIRUGRLQJWKLQJV,WDOVRLQFOXGHVWUDGLWLRQV7UDGLWLRQV
-DUHDFWLYLWLHVWKDWDUHUHSHDWHGRQDUHJXODUEDVLV
-&XOWXUHLVQRWOLPLWHGWRLQGLYLGXDOIDPLO\JURXSV7KHUHDO
-VWUHQJWKRIFXOWXUHLVLQODUJHUFRPPXQLW\JURXSV7KHVHODUJHU
-JURXSVDUHFDOOHGVRFLHWLHV(YHU\VRFLHW\PDNHVUXOHVIRULWVHOI
-,WGHFLGHVKRZSHRSOHVKRXOGDFWLQGLIIHUHQWVLWXDWLRQV
-6RPHRIWKHVHUXOHVDUHZULWWHQGRZQ6RPHDUHMXVWWKLQJV
-WKDWDUHDXWRPDWLFDOO\H[SHFWHGRIDOOPHPEHUVRIWKDWVRFLHW\
-2IWHQFXOWXUHVFDQEHLGHQWL¿HGE\ZKDWWKHSHRSOHEHOLHYH
-&XOWXUHVDUHDOVRNQRZQE\ZKDWWKH\FKRRVHWRLQFOXGHLQWKHLU
-DUW6RPHWLPHVDVRFLHW\IRUPVDURXQGSHRSOHZKRVSHDNWKH
-VDPHODQJXDJH&XOWXUHVPD\DOVREHNQRZQIRUWKHLUFXVWRPV
-LQFOXGLQJWKHIRRGVWKH\PDNHDQGWKHWKLQJVWKH\GR
-2XUFXOWXUHVKHOSXVXQGHUVWDQGZKRZHDUHDQGZKDWZH
-EHOLHYH7KHUHDUHYHU\VWURQJHPRWLRQVFRQQHFWLQJXVWRRXU
-RZQVRFLHW\7ZRGLIIHUHQWFXOWXUHVPD\GLVDJUHHRQVRPHWKLQJ
-HVSHFLDOO\LIWKH\ERWKIHHOVWURQJO\DERXWLW:KHQWKDWKDSSHQV
-ZDULVDFRPPRQUHVXOW
-3HRSOHDUHOHDUQLQJEHWWHUZD\VWRFRPPXQLFDWHZLWK
-HDFKRWKHU7KHPRUHZHOHDUQWKHPRUHZHDSSUHFLDWHWKH
-GLIIHUHQFHVLQFXOWXUHV
-$QVZHUWKHIROORZLQJTXHVWLRQVEDVHGRQWKH
-UHDGLQJSDVVDJH'RQ¶WIRUJHWWRJREDFNWR
-WKHSDVVDJHZKHQHYHUQHFHVVDU\WR¿QGRU
-FRQ¿UP\RXUDQVZHUV
-7HOODERXWDWUDGLWLRQ\RXUIDPLO\VKDUHV
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-+DYH\RXHYHUKDGDIULHQGZKRVHIDPLO\KDG
-GLIIHUHQWEHOLHIVWKDQ\RXURZQ",IVRZKDWZDV
-\RXUUHDFWLRQWRWKHGLIIHUHQFH"BBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-:KDWZRXOG\RXUDUWWHOOVRPHRQHDERXW
-\RXUFXOWXUH" BBBBBBBBBBBBBBBBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-'R\RXVSHDNPRUHWKDQRQHODQJXDJH":KDW
-LVWKHYDOXHRIOHDUQLQJDQDGGLWLRQDOODQJXDJH"
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-+RZFDQZHKHOSSUHYHQWZDUVEHWZHHQ
-FXOWXUHV"BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+Copyright ©2012 K12Reader - http://www.k12reader.com
+Cross-Curricular Reading Comprehension Worksheets: C-30 of 36
+Our culture is the system we use to build our identity. 
+All living creatures are part of a culture. Even animals have a 
+culture! So what is culture? It's the way we behave in a group. 
+It begins with each individual family. Within our families we do 
+things to build relationships with each other. This can include 
+routines for doing things. It also includes traditions. Traditions 
+are activities that are repeated on a regular basis.
+Culture is not limited to individual family groups. The real 
+strength of culture is in larger community groups. These larger 
+groups are called societies. Every society makes rules for itself.
+It decides how people should act in different situations. 
+Some of these rules are written down. Some are just things 
+that are automatically expected of all members of that society. 
+Often, cultures can be identified by what the people believe. 
+Cultures are also known by what they choose to include in their 
+art. Sometimes a society forms around people who speak the 
+same language. Cultures may also be known for their customs, 
+including the foods they make and the things they do.
+Our cultures help us understand who we are and what we 
+believe. There are very strong emotions connecting us to our 
+own society. Two different cultures may disagree on something, 
+especially if they both feel strongly about it. When that happens, 
+war is a common result. 
+People are learning better ways to communicate with 
+each other. The more we learn, the more we appreciate the 
+differences in cultures.
+Answer the following questions based on the 
+reading passage. Don't forget to go back to
+the passage whenever necessary to find or 
+confirm your answers.
+1) Tell about a tradition your family shares.
+_____________________________________
+_____________________________________
+2) Have you ever had a friend whose family had 
+different beliefs than your own? If so, what was 
+your reaction to the difference? ____________
+_____________________________________
+_____________________________________
+3) What would your art tell someone about 
+your culture? __________________________
+_____________________________________
+4) Do you speak more than one language? What 
+is the value of learning an additional language?
+_____________________________________
+_____________________________________
+5) How can we help prevent wars between 
+cultures? _____________________________
+_____________________________________
 
 
