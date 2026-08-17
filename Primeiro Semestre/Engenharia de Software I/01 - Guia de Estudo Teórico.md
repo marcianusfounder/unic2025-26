@@ -1,5 +1,5 @@
 ---
-disciplina: Engenharia de Software I
+disciplina: Engenharia de Software II
 tipo: 01 - Guia de Estudo Teórico
 status: Em Andamento
 ---

@@ -1,4 +1,4 @@
-# Guia de Estudo Teórico: Engenharia de Software II
+****# Guia de Estudo Teórico: Engenharia de Software II
 
 Este guia foi elaborado para oferecer um mergulho profundo nos conceitos fundamentais e avançados de Engenharia de Software II, abordando desde os princípios de Arquitetura de Software até a Análise e Design Orientado a Objetos (A/DOO), Princípios de Design (SOLID, GRASP), Padrões Arquitetônicos e de Projeto, e metodologias (como o RUP). 
 
