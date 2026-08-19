@@ -34,7 +34,62 @@ Uma boa arquitetura deve satisfazer não apenas os requisitos funcionais, mas pr
 
 ### 1.2 Modelagem de Arquitetura
 Arquiteturas são comumente modeladas usando:
-- **ADL (Architecture Description Languages):** Linguagens de descrição como Armani e ADML (baseado em XML).
+- **ADL (Architecture Description Languages):** Linguagens formais e semi-formais de descrição arquitetural como **Armani** e **ADML** (baseado em XML), projetadas para representar, especificar e verificar formalmente a arquitetura de software num nível elevado de abstração, desacoplado dos detalhes de implementação do código-fonte.
+  
+  #### 🔍 Detalhamento Profundo sobre ADLs:
+  1. **Propósito e Necessidade:**
+     - Surgiram para superar a ambiguidade dos diagramas informais de "caixas e linhas" (*box-and-line diagrams*), fornecendo uma semântica computacional rigorosa para a arquitetura.
+     - Permitem a análise precoce de propriedades não-funcionais (desempenho, segurança, tolerância a falhas e ausência de *deadlocks*) antes que qualquer linha de código executável seja escrita.
+  
+  2. **Os 6 Elementos Fundamentais de uma ADL:**
+     - **Componentes (Components):** Unidades computacionais ou de armazenamento de dados (ex: servidores, clientes, bases de dados, filtros) que expõem pontos de interação chamados **Portas (Ports)**.
+     - **Conectores (Connectors - Entidades de 1.ª Classe):** Elementos arquiteturais autónomos que modelam explicitamente as regras, protocolos e mecanismos de comunicação entre componentes (ex: Sockets, RPC, Pipes, Barramentos de Eventos Publish/Subscribe, SQL). Nas ADLs, o conector não é uma mera linha, mas um componente com semântica e protocolo próprios.
+     - **Sistemas / Configurações (Systems / Topologies):** O grafo global ou estrutura que define como componentes e conectores se ligam para formar a topologia completa do sistema.
+     - **Interfaces (Ports & Roles):** As portas nos componentes e os papéis (*roles*) nos conectores garantem a compatibilidade semântica da ligação.
+     - **Restrições Arquiteturais (Constraints / Invariants):** Regras lógicas e predicados que impõem condições obrigatórias que a arquitetura não pode violar (ex: regras de camadas ou limites de carga).
+     - **Estilos Arquiteturais (Architectural Styles):** Padrões estruturais formais reutilizáveis (ex: *Client-Server*, *Pipe-and-Filter*, *Layered Architecture*) validados automaticamente pela ADL.
+
+  3. **Principais Linguagens de Descrição Arquitetural (ADLs):**
+     - **Armani:** Desenvolvida na *Carnegie Mellon University* (CMU). O seu foco central é a **especificação e verificação de restrições de design (*design constraints*)** através de lógica de predicados de primeira ordem. Permite aos arquitetos definir invariantes estruturais (ex: *"Nenhum componente da Camada de Apresentação pode comunicar diretamente com a Camada de Dados"* ou *"O número máximo de clientes conectados a um servidor não pode exceder N"*) e verificar automaticamente a conformidade do design.
+     - **ADML (Architecture Description Markup Language):** Padronizada pelo *The Open Group*, baseada em XML e estruturada sobre a semântica da linguagem Acme. O seu objetivo principal é a **interoperabilidade e intercâmbio de modelos arquiteturais** entre diferentes ferramentas de software, repositórios corporativos e ambientes web.
+     - **Acme:** Concebida como uma "ADL de intercâmbio universal", fornecendo uma infraestrutura comum para que modelos criados numa ADL específica possam ser convertidos e analisados por outras ferramentas.
+     - **Wright:** Desenvolvida na CMU, foca-se na **análise formal de comportamento e protocolos de comunicação concorrente** através da álgebra de processos CSP (*Communicating Sequential Processes* de Hoare). Permite demonstrar matematicamente a ausência de *deadlocks* ou inconsistências de protocolo nas interfaces.
+     - **Darwin:** Focada na modelagem de **sistemas dinâmicos e reconfiguráveis** em tempo de execução ($\pi$-calculus).
+     - **AADL (Architecture Analysis & Design Language):** Padrão da indústria (SAE) amplamente utilizado na engenharia aeroespacial, automóvel e médica para sistemas críticos e de tempo real incorporados (*real-time embedded systems*).
+
+  4. **Quadro Comparativo: ADL vs. UML**
+     
+     | Critério | ADL (Architecture Description Languages) | UML (Unified Modeling Language) |
+     | :--- | :--- | :--- |
+     | **Foco Primário** | Arquitetura conceitual de alto nível, restrições globais e análise formal. | Modelagem geral de sistemas orientados a objetos, detalhamento de classes e implementação. |
+     | **Conectores** | **Cidadãos de 1.ª classe** com protocolos, propriedades e comportamento formal próprio. | Associações, dependências ou conectores simples (frequentemente linhas sem semântica de protocolo profunda). |
+     | **Análise Formal** | Capacidade nativa de verificação matemática de *deadlocks*, consistência e estilos. | Semântica mais flexível/semi-formal; depende de perfis adicionais (ex: OCL/SysML) para verificações formais. |
+     | **Adoção Industrial** | Alta em nichos críticos (aeroespacial, defesa, investigação avançada via AADL/Armani). | Padrão dominante na indústria de software comercial e desenvolvimento corporativo geral. |
+
+  5. **Exemplo Didático de Sintaxe Conceitual (Pseudo-ADL / Armani Style):**
+     ```text
+     System ClienteServidorBancario {
+         Component ClienteWeb {
+             Port saida_requisicao;
+         }
+         Component ServidorTransacional {
+             Port entrada_processamento;
+         }
+         Connector ConexaoSeguraTLS {
+             Role caller;
+             Role responder;
+             Property encryption = "AES-256";
+         }
+         Attachments {
+             ClienteWeb.saida_requisicao to ConexaoSeguraTLS.caller;
+             ServidorTransacional.entrada_processamento to ConexaoSeguraTLS.responder;
+         }
+         Constraint {
+             -- Invariante: Todo o tráfego externo deve ser estritamente encriptado
+             forall c in Components : c.Port.protocol == "HTTPS" or c.Port.protocol == "TLS";
+         }
+     }
+     ```
 - **UML (Unified Modeling Language):** Padrão da indústria para modelar sistemas orientados a objetos. Diagramas de componentes e de implantação são usados para modelar a arquitetura física e lógica.
 
 ---
