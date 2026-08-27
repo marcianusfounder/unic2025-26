@@ -73,3 +73,14 @@ O ambiente de produção não necessita de túnel, uma vez que painel, API, Keyc
   13. Volta automaticamente para o painel — dashboard do refeitório, RH, etc., conforme o papel dessa conta.
 ---
 *Última atualização: 14 de agosto de 2026*
+
+
+Produção está a correr (3000/8000/5432/5678, tudo em loopback) e há infra de dados de demonstração.
+
+Como se desbloqueia
+
+  grep ^KEYCLOAK_ADMIN_PASSWORD= ~/dejavia-prod/.env | cut -d= -f2-   # master, utilizador admin
+  grep ^DEJAVIA_ADMIN_PASSWORD=  ~/dejavia-prod/.env | cut -d= -f2-   # painel, utilizador admin
+
+  As contas por papel estão em ~/dejavia-prod/contas-por-papel.txt (verificadas, as três entram). Apague a entrada guardada no navegador para
+  dejavia-auth.uc5pv8.easypanel.host antes de tentar, senão o autofill volta a pôr lá a velha.

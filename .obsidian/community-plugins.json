@@ -4,9 +4,11 @@
   "obsidian-tasks-plugin",
   "obsidian-spaced-repetition",
   "dataview",
-  "templater-obsidian",
   "omnisearch",
   "obsidian-icon-folder",
   "obsidian-minimal-settings",
-  "text-generator-plugin"
+  "text-generator-plugin",
+  "obsidian-textgenerator-plugin",
+  "estudo-ativo",
+  "marcianus-audio-reader"
 ]

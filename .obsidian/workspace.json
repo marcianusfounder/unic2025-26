@@ -4,24 +4,77 @@
     "type": "split",
     "children": [
       {
-        "id": "774b839b1dcbf2f0",
+        "id": "52fe0d036b9fc0cb",
         "type": "tabs",
         "children": [
           {
-            "id": "b4147f649e6f8e24",
+            "id": "b809c5f72c8ab289",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Engenharia de Software I/01 - Guia de Estudo Teórico.md",
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/01 - Guia de Estudo Teórico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "01 - Guia de Estudo Teórico"
             }
+          },
+          {
+            "id": "59fb89f804ee4b16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico - v2 (Por Temas).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Guia de Estudo Teórico - v2 (Por Temas)"
+            }
+          },
+          {
+            "id": "e53f4f7bc9cd48d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Guia de Estudo Teórico"
+            }
+          },
+          {
+            "id": "d7849c07523ef8ee",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515"
+            }
+          },
+          {
+            "id": "284cbd20a9507205",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/GII-IYA043.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "GII-IYA043"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +94,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de ficheiros"
@@ -194,7 +249,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -203,6 +258,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "marcianus-audio-reader:Ler Nota Atual (Audiovisual Pro)": false,
       "omnisearch:Omnisearch": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
@@ -218,54 +274,58 @@
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
       "smart-connections:Smart Connections: Open random connection": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "b4147f649e6f8e24",
+  "active": "186978bd8fc5be6b",
   "lastOpenFiles": [
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260629-WA0027.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260625-WA0051.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260625-WA0049.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260625-WA0045.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260625-WA0041.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260625-WA0040.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260602-WA0013.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260602-WA0012.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/IMG-20260602-WA0009.jpg",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Sistemas Distribuídos e Programação em Paralelo_Trabalho_de_Socket_de_Rede.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Sistemas Distribuídos e Programação em Paralelo_Seguranca_em_Sistemas_Distribuidos_VTH.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Segurança Informática e Criptografia_Trabajo_Extraclase.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Segurança Informática e Criptografia_Questionáio_de_Segurança_Informática.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Segurança Informática e Criptografia_PROV-pdfprofesor-IYA043-Por_v0r0_20240515.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Segurança Informática e Criptografia_Acho_que_esse_resumo_é_muito_curto.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Programação Web_Laboratório_3.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Programação Web_Laboratório_2.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Programação Web_Laboratório_1.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Programação Web_Animações_CSS.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Inglês III_📘_Fascículo_de_Estudo-Ingl.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Inglês III_culture_(1)_(1).md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Inglês III_culture_(1).md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Inglês III_REVISION.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Inglês III_Fascículo_de_Estudo-Inglês_III.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software I_Engenharia_de_Software-Guia_de_estudo.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software I_Caso_de_Estudo_Sistema_NHS_V01.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software I_ActividadPractica_Eng_Soft01.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software I_ActividadPractica_Eng_Soft.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/DSI_IMG-20260629-WA0002.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software II_Modelo_2_-_ES2-_Complementar_2026.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software II_Engenharia_de_Software.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Eng- Software II_Caso_de_estudo.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/RAR_Direção de Sistemas de Informação_AULA_7_DSI_-_2026.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/ES_GII-IYA062.md",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)",
-    "Templates",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Engenharia de Software II",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Programação Web I",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo",
-    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Engenharia de Software I"
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico - v2.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/03 - Questionário de Preparação.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico - v2 (Por Temas).md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515.pdf",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Engenharia de Software I/IMG-20260625-WA0055.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/GII-IYA043.pdf",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/RAR_Segurança Informática e Criptografia_PROV-pdfprofesor-IYA043-Por_v0r0_20240515.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/RAR_Segurança Informática e Criptografia_Acho_que_esse_resumo_é_muito_curto.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/Exames Especiales 2025-2026 - SEMESTRE II.pdf",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/Exames Especiales 2025-2026 - SEMESTRE I.pdf",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Direção de Sistemas de Informação/IMG-20260625-WA0041.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Direção de Sistemas de Informação/IMG-20260629-WA0026.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Engenharia de Software I/IMG-20260625-WA0054.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Engenharia de Software I",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Sistemas Distribuídos e Programação em Paralelo/IMG-20260625-WA0056.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Direção de Sistemas de Informação/IMG-20260602-WA0013.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Direção de Sistemas de Informação/IMG-20260629-WA0025.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Engenharia de Software II/IMG-20260625-WA0053.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Sistemas Distribuídos e Programação em Paralelo/IMG-20260625-WA0059.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Sistemas Distribuídos e Programação em Paralelo/IMG-20260625-WA0061.jpg",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Sistemas Distribuídos e Programação em Paralelo",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Inglês III",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Engenharia de Software I/00 - Engenharia de Software I.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/Exames Especiales 2025-2026 - NOCTURNO.pdf",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/05 - Estudo Simultâneo - Tag E.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/01 - Estudo Simultâneo - Tag A.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/00 - Calendário Oficial e Estratégia de Provas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Plano de Ataque Estratégico - Exames Especiais UNIC.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Ética e Direito da Informática",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Z - Fontes Originais (Raw)/Imagens/Segurança Informática e Criptografia",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Engenharia de Software II/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Engenharia de Software I/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/04 - Estudo Simultâneo - Tag D.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/03 - Estudo Simultâneo - Tag C.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Horário dos Exames Especiais/02 - Estudo Simultâneo - Tag B.md",
+    "Notes/Remote Jobs 2026..md",
+    "Notes/Sem título.md",
+    "Notes/Os seus túneis..md",
+    "Templates/Resumo de Matéria.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Inglês III/RAR_Inglês III_culture_(1)_(1).md",
+    "Notes/Relatório..md"
   ]
 }

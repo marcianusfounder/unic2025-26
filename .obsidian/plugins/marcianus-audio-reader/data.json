@@ -1,0 +1,10 @@
+{
+  "voice": "pt-BR-FranciscaNeural",
+  "pitch": 1,
+  "rate": "+20%",
+  "binauralEnabled": true,
+  "binauralVolume": 0.05,
+  "autoScroll": true,
+  "voiceURI": "Microsoft Helia - Portuguese (Portugal)",
+  "volume": 1
+}

@@ -1,0 +1,10 @@
+{
+	"id": "marcianus-audio-reader",
+	"name": "Marcianus Audiovisual Reader Pro",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Leitor TTS audiovisual com realce sincronizado (Karaoke), Auto-scroll, Som Ambiente Binaural para foco e painel multimédia imersivo.",
+	"author": "Antigravity & Marcianus Founder",
+	"authorUrl": "https://github.com/marcianusfounder",
+	"isDesktopOnly": true
+}

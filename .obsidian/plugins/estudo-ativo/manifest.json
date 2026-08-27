@@ -1,0 +1,10 @@
+{
+	"id": "estudo-ativo",
+	"name": "Estudo Ativo - Anotações",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Ferramenta para adicionar comentários, highlights e caixas de anotação rapidamente aos seus materiais de estudo.",
+	"author": "Antigravity AI",
+	"authorUrl": "",
+	"isDesktopOnly": false
+}

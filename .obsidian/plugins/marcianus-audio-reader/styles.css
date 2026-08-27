@@ -1,0 +1,150 @@
+/* Marcianus Audio Reader Pro Styles */
+
+/* Destaque do Parágrafo Ativo no Editor */
+.marcianus-active-paragraph {
+    background-color: var(--text-selection) !important;
+    border-left: 4px solid var(--interactive-accent);
+    padding-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(var(--interactive-accent-rgb), 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Modal / HUD Flutuante */
+.marcianus-reader-hud {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 320px;
+    background: rgba(var(--background-primary-rgb), 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: var(--font-interface);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+
+.marcianus-reader-hud.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* Header do HUD */
+.marcianus-hud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 8px;
+}
+
+.marcianus-hud-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.marcianus-hud-close {
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.marcianus-hud-close:hover {
+    color: var(--text-error);
+}
+
+/* Controlos Multimédia */
+.marcianus-hud-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 8px 0;
+}
+
+.marcianus-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-normal);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.marcianus-btn:hover {
+    background: var(--background-modifier-hover);
+    color: var(--interactive-accent);
+}
+
+.marcianus-btn.play-pause {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    width: 40px;
+    height: 40px;
+}
+
+.marcianus-btn.play-pause:hover {
+    background: var(--interactive-accent-hover);
+    transform: scale(1.05);
+}
+
+/* Barra de Progresso */
+.marcianus-progress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.marcianus-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--background-modifier-border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.marcianus-progress-fill {
+    height: 100%;
+    background: var(--interactive-accent);
+    width: 0%;
+    transition: width 0.2s ease;
+}
+
+.marcianus-time-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Audio Visualizer (Equalizador) */
+.marcianus-visualizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    height: 24px;
+}
+
+.marcianus-bar {
+    width: 4px;
+    background: var(--interactive-accent);
+    border-radius: 2px;
+    transition: height 0.1s ease;
+    min-height: 2px;
+}
