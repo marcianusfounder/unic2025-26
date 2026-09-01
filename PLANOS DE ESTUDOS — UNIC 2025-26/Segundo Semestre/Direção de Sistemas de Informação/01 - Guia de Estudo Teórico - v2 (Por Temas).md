@@ -110,7 +110,27 @@ Os projetos de informática podem ser caracterizados por dimensões específicas
 | **Ágeis** | Extreme Programming (XP) | Foco em adaptação. Testes contínuos, programação pareada (pair programming), refatoração, iteratividade e colaboração diária com o cliente. |
 
 > [!IMPORTANT]
-> **E-Project (Projeto e-Business):** Possui diferenças claras do desenvolvimento tradicional. O ciclo de vida é muito mais curto (dias/meses), o processo é altamente iterativo, e a libertação de produto (releases) é rápida e frequente. A gestão de risco é inerente, em vez de estritamente planeada.
+> **E-Project (Projeto e-Business):** Possui diferenças claras do desenvolvimento tradicional. O ciclo de vida é muito mais curto (dias/meses), o processo é altamente iterativo, e a libertação de produto (releases) é rápida e frequente. A gestão de risco é inerente, em vez de estritamente planeada. Pode ser de três tipos: Nova Construção, Remodelamento e Manutenção (em tempo real).
+
+### 3.4. Problemas Comuns em Projetos de Informática e Má Gestão
+Os projetos de software frequentemente enfrentam os mesmos desafios crónicos, que derivam tanto da natureza do produto como de falhas de gestão.
+
+**Problemas Comuns:**
+- **Necessidades não satisfeitas** ou não identificadas.
+- **Os habituais:** Atrasos crónicos e derrapagem de custos.
+- **O social:** A imposição dos resultados aos utilizadores (rejeição).
+
+**As Causas:**
+- **Natureza do Produto:** Intangível, invisível, complexo, volátil em exigências e sociotécnico (difícil de medir).
+- **Problemas de Gestão:** Objetivos e especificações pobremente definidos, falta de planeamento, orçamentos e prazos irreais, e falta de habilidades nas relações sociais.
+
+**Estados de uma Má Gestão:**
+1. **Fora de controle e escalada:** O projeto entra num efeito "bola de neve" de erros. Há replanejamentos frequentes, dispersão de motivação e a sensação de que "as semanas têm 7 dias e os dias 24 horas".
+2. **Modo ajustado:** A situação é tensa e o projeto "cheira a fracasso".
+3. **Marcha Mortal (Death March):** Situação extrema onde o prazo, orçamento ou pessoal foram cortados para metade do racionalmente exigido, enquanto os requisitos e complexidade duplicaram.
+
+**Recuperação e Desescalada:**
+Para superar uma escalada de erros, a gestão deve implementar ações de *desescalada*: circunscrever a envergadura do projeto, assumir que não terminará a tempo, adiar datas, aumentar pessoal ou reduzir o alcance. Por vezes, contrata-se um **Cavaleiro Branco** (*White Knight*): um especialista de salvamento que entra em cena para eliminar o mau funcionamento e tentar recuperar o projeto.
 
 ---
 
@@ -130,12 +150,20 @@ Antes da implementação tecnológica, a estratégia tem de alinhar a missão co
 - **Análise Demográfica/Mercado:** Perfil do consumidor web e tendências de internet.
 
 ### 4.3. Processos Chave e-Business (Os Grandes Pilares)
-- **CRM (Customer Relationship Management):** Passa-se para o Marketing Relacional. Foco em manter um diálogo constante, conhecer o cliente, fidelizar (sai muito mais barato reter do que atrair) e personalizar a oferta ("Marketing 1-to-1").
-- **SCM (Supply Chain Management):** A Gestão da Cadeia de Fornecimentos exige tempo de mercado (Time to Market) otimizado, integração em rede e minimização de custos logísticos, ligando a empresa aos parceiros em tempo real.
+- **CRM (Customer Relationship Management):** Passa-se para o Marketing Relacional. Foco em manter um diálogo constante, conhecer o cliente, fidelizar (sai muito mais barato reter do que atrair) e personalizar a oferta ("Marketing 1-to-1"). Para obter êxito, uma solução CRM apoia-se em quatro pilares básicos: **Estratégia, Pessoas, Processos e Tecnologia**.
+- **SCM (Supply Chain Management):** A Gestão da Cadeia de Fornecimentos exige tempo de mercado (*Time to Market*) otimizado, integração em rede e minimização de custos logísticos, ligando a empresa aos parceiros em tempo real.
 - **Comércio Eletrónico:** Empoderamento do cliente no auto-serviço (ex: processar os próprios pedidos on-line).
 
+### 4.4. Fatores de Êxito para a Estratégia e Arquitetura e-Business
+A infraestrutura tecnológica desenhada para a solução e-Business deve assegurar que o sistema seja:
+- **Escalável e Particionável:** Suportar crescimento na capacidade de acordo com a demanda e volumes de transações.
+- **Flexível:** Arquitetura aberta a incorporar novas tecnologias e processos.
+- **Confiável e Disponível:** Com 99.99% de disponibilidade (24/7/365).
+- **Acessível e Gerenciável:** Acesso a partir de qualquer dispositivo cliente e gerido sob uma plataforma única.
+- **Recuperável:** Capaz de preservar a integridade da base de dados e recuperar-se rapidamente após quedas.
+
 > [!WARNING]
-> Fatores Críticos de Sucesso para e-Business incluem possuir clara orientação executiva, comprometer toda a organização (não é um projeto isolado de TI), unir visão de negócios e tecnológica e abraçar a mudança cultural.
+> A nível de negócios, os Fatores Críticos de Sucesso para e-Business incluem possuir clara orientação executiva, comprometer toda a organização (não é um projeto isolado de TI), unir visão de negócios e tecnológica, e abraçar a mudança cultural.
 
 ---
 

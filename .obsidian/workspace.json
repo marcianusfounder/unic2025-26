@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b809c5f72c8ab289",
+            "id": "59fb89f804ee4b16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/01 - Guia de Estudo Teórico.md",
-                "mode": "source",
+                "file": "Horário dos Exames Especiais/00 - Calendário Oficial e Estratégia de Provas.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Guia de Estudo Teórico"
+              "title": "00 - Calendário Oficial e Estratégia de Provas"
             }
           },
           {
-            "id": "59fb89f804ee4b16",
+            "id": "00d2f758b13c4e3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,45 +36,35 @@
             }
           },
           {
-            "id": "e53f4f7bc9cd48d0",
+            "id": "4c03e23b623fa027",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico.md",
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/02 - Exercícios e Práticas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Guia de Estudo Teórico"
+              "title": "02 - Exercícios e Práticas"
             }
           },
           {
-            "id": "d7849c07523ef8ee",
+            "id": "d03d09afcd6697d5",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515.pdf"
+                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/03 - Questionário de Preparação.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "PROV-PDFCampus-UNIC-IYA043-Por_v0r0_20240515"
-            }
-          },
-          {
-            "id": "284cbd20a9507205",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/Referências (Originais)/GII-IYA043.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "GII-IYA043"
+              "icon": "lucide-file",
+              "title": "03 - Questionário de Preparação"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -249,7 +239,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -279,9 +269,23 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "186978bd8fc5be6b",
+  "active": "d03d09afcd6697d5",
   "lastOpenFiles": [
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/02 - Exercícios e Práticas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico - v2 (Por Temas).md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/03 - Questionário de Preparação.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico.md",
+    "Segundo Semestre/Direção de Sistemas de Informação/02 - Exercícios e Práticas.md",
+    "Segundo Semestre/Direção de Sistemas de Informação/01 - Guia de Estudo Teórico.md",
     "Horário dos Exames Especiais/00 - Calendário Oficial e Estratégia de Provas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/02 - Exercícios e Práticas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico - v2.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo/02 - Exercícios e Práticas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Sistemas Distribuídos e Programação em Paralelo/01 - Guia de Estudo Teórico - v2.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/02 - Exercícios e Práticas.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/01 - Guia de Estudo Teórico - v2.md",
+    "PLANOS DE ESTUDOS — UNIC 2025-26/Primeiro Semestre/Segurança Informática e Criptografia/01 - Guia de Estudo Teórico.md",
     "Notes/Relatório..md",
     "Notes/Remote Jobs 2026..md",
     "Notes/Os seus túneis..md",
@@ -294,20 +298,6 @@
     "Segundo Semestre/Ética e Direito da Informática/Etica_E_Direito_De_Informatica_IMG-20260705-WA0012.md",
     "Segundo Semestre/Ética e Direito da Informática/IYA041-Anexos-Esp.md",
     "Segundo Semestre/Ética e Direito da Informática/ES_GII-IYA041.md",
-    "Segundo Semestre/Ética e Direito da Informática/Direito_De_Informatica_IMG-20260705-WA0011.md",
-    "Segundo Semestre/Ética e Direito da Informática/Direito_De_Informatica_IMG-20260705-WA0010.md",
-    "Segundo Semestre/Ética e Direito da Informática/02 - Exercícios e Práticas.md",
-    "Segundo Semestre/Ética e Direito da Informática/01 - Guia de Estudo Teórico.md",
-    "Segundo Semestre/Ética e Direito da Informática/00 - Ética e Direito da Informática.md",
-    "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II/LNTTII Aula 3.md",
-    "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II/01 - Guia de Estudo Teórico.md",
-    "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II/ES_GII-IYA062.md",
-    "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II/02 - Exercícios e Práticas.md",
-    "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II/00 - Laboratórios de Novas Tendências e Tecnologias II.md",
-    "Segundo Semestre/Engenharia de Software II/RAR_Eng- Software II_Modelo_2_-_ES2-_Complementar_2026.md",
-    "Segundo Semestre/Engenharia de Software II/RAR_Eng- Software II_Engenharia_de_Software.md",
-    "Segundo Semestre/Engenharia de Software II/RAR_Eng- Software II_Caso_de_estudo.md",
-    "Segundo Semestre/Engenharia de Software II/PROV-PDFCampus-UNIC-IYA039-Por_v0r0_20240522.md",
     "Segundo Semestre/Ética e Direito da Informática",
     "Segundo Semestre/Programação Web I",
     "Segundo Semestre/Laboratórios de Novas Tendências e Tecnologias II",

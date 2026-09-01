@@ -103,6 +103,16 @@ A biblioteca ITIL define as melhores práticas para a Gestão de Serviços de TI
 **a)** As formas organizacionais de equipa (Dimensão Organizacional) estudadas são: Isomórfica, Especialista, Democrática e Programador-Líder.
 **b)** **Democrática:** É uma estrutura onde as decisões são tomadas pelo grupo em conjunto, sem uma hierarquia rígida de topo, o que pode promover alta moral na equipa, mas pode apresentar lentidão na tomada de decisões em momentos críticos.
 
+**11. Existem alguns problemas considerados comuns nos projetos de informática.**
+**a) Diga quais.**
+**b) Quais são os estados que indicam uma gestão deficiente dos projetos de informática?**
+**c) Explique em que consiste um desses estados.**
+
+**Resposta:**
+**a)** Os problemas comuns são: necessidades não satisfeitas ou não identificadas; atrasos e aumento descontrolado de custos ("os habituais"); e a imposição dos resultados ao utilizador final (fator social).
+**b)** Os estados de má gestão são: Fora de controle e escalada (efeito bola de neve); Modo ajustado ("cheira a fracasso"); e Marcha Mortal (*Death March*).
+**c)** A **Marcha Mortal** consiste num estado extremo onde um projeto prossegue mesmo quando o prazo ou orçamento atribuídos são inferiores a metade do que seria racionalmente necessário, muitas vezes com pessoal sem a experiência adequada e com o dobro dos requisitos técnicos habituais.
+
 ---
 
 ## Tema 4: E-Business e Estratégia Tecnológica
@@ -125,12 +135,20 @@ A biblioteca ITIL define as melhores práticas para a Gestão de Serviços de TI
 **a)** Os Fatores Críticos de Sucesso para projetos e-Business incluem: possuir uma clara orientação executiva; comprometer toda a organização (não pode ser visto apenas como um "projeto isolado de TI"); unir a visão de negócios à visão tecnológica; e abraçar a mudança cultural promovendo a difusão do conhecimento.
 **b)** A **união entre a visão de negócios e a tecnológica** é muitas vezes a mais importante, porque sem o alinhamento de ambas, o projeto tecnológico pode resultar num sistema excelente a nível técnico, mas inútil para a estratégia e transformação do negócio central da empresa.
 
-**13. Para conceber uma estratégia que ajude a organização a alcançar seus objetivos em uma solução e-business devem ser considerados alguns aspectos. Um deles é coerência com o negócio principal. a) Em que critérios é que este aspecto precisa de se basear?**
+**14. Para conceber uma estratégia que ajude a organização a alcançar seus objetivos em uma solução e-business devem ser considerados alguns aspectos. Um deles é coerência com o negócio principal. a) Em que critérios é que este aspecto precisa de se basear?**
 
 **Resposta:**
 Na definição estratégica, a empresa deve alinhar a sua missão tecnológica com os objetivos financeiros e de mercado. Isso baseia-se numa **Análise Externa**, que utiliza o modelo das "Cinco Forças de Porter" (avaliando rivalidade, poder de fornecedores/compradores, ameaças de novos entrantes e substitutos), e numa **Análise Demográfica/Mercado**, onde se estuda o perfil do consumidor web e as tendências.
 
-**14. Para uma empresa que procura a transição do comércio tradicional para o e-business...**
+**15. Uma empresa de engenharia está a planear a possibilidade de implementar uma solução de e-business numa das suas áreas de negócio. Para conceber uma estratégia que ajude a organização a alcançar seus objetivos deve fazer uma Análise de forças externas.**
+**a) Quais são as forças externas a considerar?**
+**b) Que elementos deve a organização ter em consideração ao definir os seus objetivos estratégicos?**
+
+**Resposta:**
+**a)** Segundo o Modelo das Cinco Forças de Porter, as forças externas a considerar são: Ameaça de entrada de novos concorrentes, Rivalidade entre os concorrentes atuais, Poder de negociação dos fornecedores, Poder de negociação dos compradores, e Ameaça de entrada de produtos substitutos.
+**b)** Na definição dos objetivos estratégicos, a organização deve procurar: ser uma reconhecida líder de mercado, elevar a sua posição no mercado, apresentar um melhor serviço ao cliente, contar com uma estrutura de custos mais baixa que a concorrência, ter uma alta capacidade de resposta às mudanças e oferecer produtos de alta e reconhecida qualidade.
+
+**16. Para uma empresa que procura a transição do comércio tradicional para o e-business...**
 **a) Os quatro pilares a ter em conta para obter êxito neste tipo de projetos.**
 **b) Qual considera mais importante e porquê?**
 
@@ -143,7 +161,7 @@ Na definição estratégica, a empresa deve alinhar a sua missão tecnológica c
 
 ## Tema 5: Planeamento, Estimativas e Exercícios Práticos
 
-**15. Na fase de Planejamento de um projeto de solução de e-business, a equipa identificou a necessidade de fazer algumas estimativas.**
+**17. Na fase de Planejamento de um projeto de solução de e-business, a equipa identificou a necessidade de fazer algumas estimativas.**
 **a) Mencione as estimativas que serão necessárias.**
 **b) Que ferramentas ou métodos podem ser utilizados para fazê-las?**
 
@@ -151,51 +169,18 @@ Na definição estratégica, a empresa deve alinhar a sua missão tecnológica c
 **a)** As duas estimativas principais e vitais na iniciação e planeamento recaem sobre a estimativa de **Trabalho/Tempo (Cronograma)** e a estimativa de **Custo (Orçamento)**.
 **b)** Para estimativas de Custo, usam-se métodos como **Top-Down** (analogia a projetos passados) ou **Bottom-Up** (somando custos das tarefas detalhadas), muitas vezes auxiliados pela **Curva-S**. Para a estimativa do trabalho, utiliza-se a **WBS** (Decomposição do Projeto) em conjunto com **Gráficos de Gantt** e **Diagramas de Rede/Precedência**.
 
-**16. As cartas GANTT são ferramentas que facilitam a revisão do programa do projeto.**
+**18. O planeamento e o controlo do tempo são atividades fundamentais na gestão de projetos de software. Para apoiar estas atividades, os gestores recorrem a diferentes ferramentas de representação e acompanhamento das tarefas do projeto.**
+**a) Indique duas ferramentas gráficas amplamente utilizadas para planear e acompanhar as atividades de um projeto de software.**
+**b) Explique a finalidade de cada uma delas e a informação que permitem visualizar.**
+
+**Resposta:**
+**a)** O Gráfico de Gantt e os Diagramas de Precedência (Diagrama de Rede).
+**b)** O **Gráfico de Gantt** é usado para o planeamento temporal das tarefas; permite visualizar claramente a duração de cada tarefa, datas de início e fim e o progresso ao longo do tempo, num formato de fácil interpretação. O **Diagrama de Rede** serve para planear a sequência lógica de execução; permite visualizar as dependências (precedências) entre tarefas, o fluxo lógico do projeto e facilita o cálculo do caminho crítico e de potenciais atrasos.
+
+**19. As cartas GANTT são ferramentas que facilitam a revisão do programa do projeto.**
 **a) Explique que vantagens a sua utilização pode trazer aos projetos.**
 **b) Acha que pode haver desvantagens ao utilizar esta ferramenta? Por quê?**
 
 **Resposta:**
 **a)** A grande vantagem do Gráfico de Gantt é ser muito útil na fase inicial do projeto e na elaboração de relatórios visuais claros, permitindo uma comunicação intuitiva do cronograma às equipas e gestão.
 **b)** Sim, existem desvantagens. O Gantt não evidencia facilmente as **dependências complexas** (caminhos críticos) entre as tarefas nem os impactos e atrasos numa rede interligada de atividades, exigindo a sua complementaridade com o Diagrama de Rede (Precedências).
-
-**17. (Exercício 2) Um banco pretende implementar um sistema de informação para aprovação automática de crédito. A direção de TI considera o projeto bem-sucedido porque: o software funciona sem erros, testes foram aprovados, a plataforma está estável. Entretanto, a direção comercial afirma que: os clientes continuam insatisfeitos, o tempo de aprovação não diminuiu, houve redução nas vendas.**
-**1. Explique a diferença entre visão de TI e visão de negócio.**
-**2. O projeto pode ser considerado bem-sucedido? Justifique.**
-**3. Identifique os indicadores que cada área utilizou.**
-**4. Que tipo de conflito organizacional está presente?**
-**5. Como alinhar os objetivos tecnológicos aos objetivos de negócio?**
-
-**Resposta:**
-1. A **Visão de TI (tecnológica)** foca na dimensão de construção do artefato: ausência de *bugs*, estabilidade de infraestrutura, cumprimento das especificações de código. A **Visão de Negócio (gestão)** foca na mudança organizacional: impacto nas operações centrais, retorno financeiro e utilidade real para os clientes (e-business).
-2. Não. O projeto tecnológico só atinge a sua finalidade se promover "uma solução inteligente a um problema" mudando a organização e influenciando o negócio (Teoria do Projeto, 1.4). Sem resultados nas vendas e satisfação, falhou.
-3. Indicadores TI: Erros reportados (bugs), aprovação em testes de sistema, estabilidade e *uptime* da plataforma. Indicadores Negócio: Nível de satisfação do cliente (CRM), tempo médio (Time to Market/Time of Process) e volume de vendas.
-4. Conflito entre a Dimensão de Gestão (Negócio) vs Dimensão de Construção (Tecnológica).
-5. Através da Iniciação e Planeamento conjunto. Adotando Fatores Críticos de Êxito: garantindo compromisso de toda a organização executiva e asseverando que os requisitos de TI (Análise de Exigências) nasçam diretamente dos processos chave identificados pela Análise de Negócio.
-
-**18. (Exercício 3) Uma empresa desenvolveu um sistema de gestão hospitalar. Antes da implementação definitiva, realizou testes. Durante os testes: alguns médicos afirmaram que o sistema era lento; certos pacientes não conseguiam finalizar o agendamento; os relatórios apresentavam informações incompletas; alguns utilizadores tiveram dificuldades em utilizar a interface.**
-**1. Explique o objetivo dos testes de validação no contexto apresentado.**
-**2. Diferencie teste Alfa e teste Beta.**
-**3. Identifique quais problemas poderiam ser descobertos no teste Alfa e no Beta.**
-**4. Justifique por que os testes são importantes antes da entrada em produção.**
-**5. Caso os problemas não sejam corrigidos, quais poderão ser os impactos para: utilizadores, organização, pacientes.**
-**6. Proponha duas melhorias que a equipa deve realizar antes da entrega final.**
-
-**Resposta:**
-1. O objetivo dos testes na fase final do desenvolvimento de software é responder à pergunta: "O problema foi resolvido?" (Validação dos requisitos funcionais).
-2. O **Teste Alfa** é realizado em ambiente controlado, muitas vezes pelos próprios developers ou pela equipa interna (Teste Alpha). O **Teste Beta** é o teste de validação efetuado num ambiente real por um grupo restrito de clientes ou utilizadores finais (Teste Beta).
-3. **Alfa:** Sistema lento; relatórios com dados incompletos (erros sistémicos e lógica interna). **Beta:** Pacientes que não conseguiam finalizar o agendamento; dificuldade com a interface e usabilidade por parte dos médicos.
-4. Garantem a qualidade prometida e detetam as falhas técnicas preventivamente. Evitam a entrega de um produto inviável ("Triângulo do Diabo" na vertente da Qualidade), que originaria altíssimos custos de correção (manutenção) em produção.
-5. **Utilizadores (médicos):** Frustração e recusa em usar a plataforma. **Organização (hospital):** Prejuízo financeiro, perda de prestígio, custos inflacionados com manutenção. **Pacientes:** Inabilidade de obter atendimento atempadamente, impactando riscos de saúde.
-6. A equipa deve: 1) Efetuar intervenções de otimização da infraestrutura de servidores e do código para resolver a lentidão de processamento; 2) Redesenhar a usabilidade (UI/UX) da interface para garantir a correta interação dos utilizadores finais.
-
-**19. (Exercício 4) Uma organização pública implementou um sistema nacional de informação. O projeto consumiu um grande orçamento, sofreu um atraso de três anos e nunca atingiu a utilização planeada. Os utilizadores rejeitam o sistema, a manutenção é cara e não existe documentação adequada. Produza uma análise crítica:**
-
-**Resposta:**
-- **1. Classificação do projeto:** Pelo tipo de executor: Público. Pela natureza: Informática (Sistemas de Informação). Pelo grau de dificuldade: Êxito Incerto.
-- **2. Falhas de gestão:** Houve falência total no controlo do "Triângulo do Diabo": o orçamento estoirou (Custo), houve derrapagem massiva de cronogramas (Tempo) e o resultado final foi rejeitado (Qualidade/Alcance).
-- **3. Falhas técnicas na fase de desenvolvimento:** Não foi aplicada rigorosamente a fase de "Análise das Exigências" (a equipa nunca entendeu o verdadeiro problema) e houve total incúria nas etapas de Teste, implementando software não testado junto dos utilizadores finais.
-- **4. Problemas organizacionais e humanos:** Inexistência de gestão de mudança e falha na integração entre visão tecnológica e de negócio (a organização não "abraçou a mudança"). Os utilizadores não foram envolvidos nem receberam documentação.
-- **5. Impactos da ausência de documentação:** Impede a correta transferência de responsabilidades no "Encerramento". A ausência de manuais, dicionários de dados e código comentado inviabiliza que outras equipas façam a gestão ou a expansão, tornando qualquer manutenção extremamente morosa e dispendiosa.
-- **6. Tipos de manutenção:** Neste momento, seriam precisas intervenções de Manutenção Corretiva (corrigir os defeitos atuais que originam a rejeição do sistema) e Adaptativa/Perfectiva para ajustar as funcionalidades às necessidades verdadeiras.
-- **7. Estratégia de recuperação:** 1º Reiniciar a fase de *Inteligência* (identificando a razão real da rejeição); 2º Adotar uma abordagem ágil/incremental (*quick wins*) promovendo melhorias parcelares e visíveis do sistema; 3º Executar testes intensivos junto dos utilizadores insatisfeitos; 4º Produzir rigorosa documentação *As-Built* antes de libertar a versão definitiva, acompanhada de forte formação ao pessoal para diminuir a resistência e permitir um novo *Deployment* efetivo.
