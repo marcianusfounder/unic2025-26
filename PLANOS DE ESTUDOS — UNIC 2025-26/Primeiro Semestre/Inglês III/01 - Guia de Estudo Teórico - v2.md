@@ -145,3 +145,78 @@ Os adjetivos comparativos servem para contrapor dois elementos.
   2. **Adjetivos terminados em 'y':** Troca-se o 'y' por 'i' e adiciona-se `-er`. Ex: *easy* $\rightarrow$ *easier than*.
   3. **Adjetivos longos (2 sílabas ou mais):** Usa-se *more* antes do adjetivo + *than*. Ex: *comfortable* $\rightarrow$ *more comfortable than* / *advanced* $\rightarrow$ *more advanced than*.
   4. **Irregulares:** *Good* $\rightarrow$ *better than* / *Bad* $\rightarrow$ *worse than* / *Far* $\rightarrow$ *farther / further than*.
+
+* **Comparativos de ADJETIVO vs. de ADVÉRBIO:**
+  * *Adjetivo* (qualifica um substantivo): *a **wider** variety of food*, *bigger and better products*, *newer products*, *a **more modern** phone*.
+  * *Advérbio* (qualifica um verbo): *live **more comfortably***, *the market is growing **faster***, *buy things **more easily***, *listen to music **more often***, *think **more seriously***.
+  * Advérbios curtos irregulares: *well* $\rightarrow$ *better*, *badly* $\rightarrow$ *worse*, *hard* $\rightarrow$ *harder*, *fast* $\rightarrow$ *faster*.
+* **Uso do *than*:** obrigatório quando o segundo termo é **explícito** (*This phone is older **than** mine*); omite-se quando o segundo termo está **implícito** (*Take a look at my phone... I'm much **happier** with it*; *The screen is a lot **larger**, too*).
+
+---
+
+## 6. Conteúdos Adicionais das Provas Oficiais (Séries A–G)
+
+Esta secção consolida todo o material efetivamente cobrado nas provas oficiais (Docente: MsC. Dombaxi André / David André). As resoluções passo a passo estão no ficheiro **02 - Exercícios e Práticas**.
+
+### 6.1 Mapa dos textos de compreensão recorrentes
+
+| Texto | Série(s) | Tema / Foco gramatical |
+|:---|:---:|:---|
+| *Culture shock* (Kalervo Oberg – 4 fases + *reverse culture shock*) | A | Vocabulário cultural; identificação de estágios |
+| *Roberto Solano* (imigrante mexicano em Nova Iorque) | B | Os 4 estágios aplicados a um caso real; present perfect |
+| *A traditional wedding* (casamento na Sardenha, Itália vs. Reino Unido) | C, D | Comparação intercultural; present perfect (*I've been to...*) |
+| *Hetty Green – "The Witch of Wall Street"* | F | Biografia (past simple); sinónimos de riqueza/avareza; *for/since* |
+| *What is a Consumer Society?* | E | Adjetivos e advérbios comparativos; T/F |
+| *Newcastle / "Geordies"* (describing a place) | G | Pronomes relativos *who / which / where* |
+
+### 6.2 *Been* vs. *Gone* (Present Perfect)
+
+| Forma | Significado | Exemplo |
+|:---|:---|:---|
+| **have/has been to** | Foi a um lugar **e já regressou** (experiência concluída). | *I've just **been** to the shops. I've bought lots of things.* (já estou de volta) |
+| **have/has gone to** | Foi a um lugar **e ainda lá está / está a caminho**. | *Tom has just **gone** out. He'll be back in about an hour.* |
+
+* Pergunta sobre a pessoa presente: *Where have you **been**?* (Onde estiveste?)
+* Pergunta sobre a pessoa ausente: *I don't know where she's **gone**.* (Para onde ela foi.)
+
+### 6.3 Conectores adicionais: *also*, *or*, *therefore*
+
+| Conector | Função | Pontuação típica | Exemplo |
+|:---:|:---|:---|:---|
+| **ALSO** | Adição / reforço (dentro da frase). | Antes do verbo principal ou depois de *be*. | *Kennedy Park **also** has a great campground.* / *I can **also** go climbing indoors.* |
+| **OR** | Alternativa / opção. | Sem vírgula em pares curtos. | *If it's raining **or** snowing...* / *on a Saturday **or** Sunday.* |
+| **THEREFORE** | Consequência lógica (registo **formal**). | *. Therefore,* ou *; therefore,* | *Simon was busy; **therefore** he couldn't come to the party.* / *You are only 15. **Therefore**, you can't take the driving test.* |
+
+> [!NOTE]
+> **HOWEVER vs. BUT:** ambos exprimem contraste. *But* liga duas orações dentro da mesma frase (*It's not interesting, **but** we watched it*). *However* é mais formal e vem tipicamente isolado por vírgulas ou a abrir frase após ponto/ponto-e-vírgula (*Jack enjoys English; **however**, he finds it difficult*).
+
+### 6.4 Sinónimos – adjetivos de descrição (Série F)
+
+| Adjetivo comum | Sinónimo (registo mais forte/formal) | Contexto de prova |
+|:---|:---|:---|
+| rich | **wealthy** | *'I knew her uncle was very wealthy.'* |
+| new / recent (edifícios, cidade) | **modern** | *'Paris is much more modern than I expected.'* |
+| wonderful / great | **brilliant** | *'Wasn't that film wonderful!' – 'Yes, it was brilliant.'* |
+| kind / giving | **generous** | *'He's one of the most generous people I know.'* |
+| untidy | **messy** | *'I told her the bedroom was messy yesterday.'* |
+| bored with / tired of | **fed up (with)** | *'I'm really fed up with this lesson, too!'* |
+
+**Campo lexical de *Hetty Green*:** *spoilt* (mimada), *mean / meanness* (avarento/avareza), *stingy*, *to argue about prices* (regatear), *to save every penny*, *ragged* (esfarrapado), *hated*, *stocks and shares* (ações), *to inherit* (herdar), *fortune*, *to amputate*.
+
+### 6.5 T/F Reading – estratégia de resposta
+
+1. Frases com **quantificadores absolutos** (*everyone, all, always, never, no one*) são geralmente **FALSAS** quando o texto usa expressões parciais (*some people, many, often*). Ex.: *"Everyone agrees that consumer products improve their lives"* → **F** (o texto diz *"Some people think..."*).
+2. Cada resposta deve ser justificável com **uma frase específica** do texto.
+3. Cuidado com contradições diretas: *"consumer goods are hard to find"* → **F** (*"people can buy these things more easily than ever before"*).
+
+### 6.6 Pronomes relativos – os 8 padrões da Série G
+
+| Padrão | Regra | Exemplo resolvido |
+|:---|:---|:---|
+| Pessoa (sujeito) | **who / that** | *There is the boy **who** broke the window.* |
+| Coisa (sujeito/objeto) | **which / that** | *Here are the letters **which** arrived this morning.* |
+| Lugar (com preposição *in/at*) | **where** (substitui *in which*) | *That's the house **where** I was born.* / *That's the palace **where** the king lives.* |
+
+> Quando a frase original termina em preposição + pronome (*I was born **in it***, *the king lives **in it***, *we met **in it***), a junção correta usa **where** e elimina a preposição.
+
+---
