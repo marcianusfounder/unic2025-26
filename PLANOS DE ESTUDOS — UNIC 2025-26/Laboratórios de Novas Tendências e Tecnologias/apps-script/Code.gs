@@ -418,3 +418,33 @@ function onOpen() {
     .addItem('Processar / atualizar tudo', 'main')
     .addToUi();
 }
+
+/**
+ * Endpoint HTTP para execução remota (via clasp deploy + curl).
+ * GET ?token=SEGREDO  ->  corre main() e devolve JSON com o URL do consolidado.
+ * Define a propriedade de script RUN_TOKEN (Definições do projeto > Propriedades)
+ * ou deixa vazio para permitir sem token.
+ */
+/** Define o segredo do endpoint (chamar 1x via `clasp run setRunToken_ --params '["..."]'`). */
+function setRunToken_(token) {
+  PropertiesService.getScriptProperties().setProperty('RUN_TOKEN', String(token));
+  return 'RUN_TOKEN definido';
+}
+
+function doGet(e) {
+  const out = { ok: false };
+  try {
+    const expected = PropertiesService.getScriptProperties().getProperty('RUN_TOKEN');
+    if (expected && (!e || !e.parameter || e.parameter.token !== expected)) {
+      out.error = 'token inválido';
+      return ContentService.createTextOutput(JSON.stringify(out))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+    out.url = main();
+    out.ok = true;
+  } catch (err) {
+    out.error = String(err);
+  }
+  return ContentService.createTextOutput(JSON.stringify(out))
+    .setMimeType(ContentService.MimeType.JSON);
+}
