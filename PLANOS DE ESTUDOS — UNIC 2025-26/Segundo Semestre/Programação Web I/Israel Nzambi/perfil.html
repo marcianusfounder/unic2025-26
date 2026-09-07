@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TÍTULO DA PÁGINA (aparece no separador do navegador) -->
+  <title>Meu Perfil</title>
+
+  <!-- =========================================================
+       2.º TIPO DE CSS: ESTILO INTERNO
+       Fica dentro de <style> no <head>. Aqui estiliza o cabeçalho.
+       ========================================================= -->
+  <style>
+    .cabecalho {
+      background-color: #1d3557;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .cabecalho p {
+      margin: 6px 0 0;
+      color: #a8dadc;
+    }
+  </style>
+
+  <!-- =========================================================
+       3.º TIPO DE CSS: ESTILO EXTERNO
+       Ficheiro separado ligado com <link>. Estiliza o resto da página.
+       ========================================================= -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!-- ===================== e) CABEÇALHO ===================== -->
+  <header class="cabecalho">
+    <!-- =====================================================
+         1.º TIPO DE CSS: ESTILO EM LINHA (inline)
+         Escrito no atributo style="" do próprio elemento.
+         ===================================================== -->
+    <h1 style="margin: 0; font-size: 34px; letter-spacing: 1px;">Meu Perfil</h1>
+    <p>Israel Nzambi &middot; Engenharia Informática</p>
+  </header>
+
+  <!-- ================= f) CONTEÚDO PRINCIPAL ================= -->
+  <main class="conteudo">
+
+    <!-- b) Pequeno texto de apresentação -->
+    <section class="apresentacao">
+      <h2>Quem sou</h2>
+      <p>
+        Chamo-me Israel Tali Nungeli Nzambi. Sou estudante do 4.º ano de
+        Engenharia Informática na Universidade Internacional do CUANZA.
+        Gosto de programação web, de resolver problemas e de aprender
+        tecnologias novas todos os dias.
+      </p>
+    </section>
+
+    <!-- c) Uma imagem -->
+    <section class="foto">
+      <h2>Fotografia</h2>
+      <!-- Substituir por uma foto real (perfil.jpg) se disponível -->
+      <img src="imagens/perfil.svg" alt="Fotografia de perfil de Israel Nzambi" width="180">
+    </section>
+
+    <!-- d) Lista com três hobbies -->
+    <section class="hobbies">
+      <h2>Os meus hobbies</h2>
+      <ul>
+        <li>Programação</li>
+        <li>Leitura</li>
+        <li>Futebol</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===================== g) RODAPÉ ===================== -->
+  <footer class="rodape">
+    <p>&copy; 2026 Israel Nzambi &mdash; Programação Web I</p>
+  </footer>
+
+</body>
+</html>

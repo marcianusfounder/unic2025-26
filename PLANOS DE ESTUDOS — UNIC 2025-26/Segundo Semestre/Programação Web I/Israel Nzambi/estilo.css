@@ -1,0 +1,71 @@
+/* =========================================================
+   PERGUNTA 2 — CSS EXTERNO (perfil.html)
+   Este é o 3.º tipo de CSS: um ficheiro .css separado,
+   ligado ao HTML com <link rel="stylesheet" href="estilo.css">.
+   Responsável pelo layout em blocos e pela aparência geral.
+   ========================================================= */
+
+/* Reset simples para todos os elementos */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f1faee;
+  color: #1d1d1d;
+  line-height: 1.6;
+}
+
+/* ---------- f) BLOCO: CONTEÚDO PRINCIPAL ---------- */
+.conteudo {
+  max-width: 800px;
+  margin: 0 auto;      /* centra o bloco na página */
+  padding: 24px 20px;
+}
+
+/* Cada secção do conteúdo é uma "caixa" (organização em blocos) */
+.conteudo section {
+  background-color: #ffffff;
+  border: 1px solid #a8dadc;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+
+.conteudo h2 {
+  color: #1d3557;
+  margin-top: 0;
+  border-bottom: 2px solid #e63946;
+  padding-bottom: 6px;
+}
+
+/* Lista de hobbies */
+.hobbies ul {
+  padding-left: 22px;
+  margin-bottom: 0;
+}
+
+.hobbies li {
+  margin-bottom: 6px;
+}
+
+/* Imagem */
+img {
+  display: block;
+  border-radius: 8px;
+  border: 3px solid #457b9d;
+}
+
+/* ---------- g) BLOCO: RODAPÉ ---------- */
+.rodape {
+  background-color: #1d3557;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+.rodape p {
+  margin: 0;
+}
