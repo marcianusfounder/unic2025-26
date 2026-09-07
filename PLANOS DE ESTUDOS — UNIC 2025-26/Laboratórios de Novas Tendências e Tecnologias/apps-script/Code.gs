@@ -131,7 +131,11 @@ function buildMasterSheet_(masterSs) {
     const critMap = mapCriteria_(headers);
 
     // Faculdade: coluna própria, senão deriva do nome do ficheiro.
-    const facultyFromName = file.getName().replace(/\.(xlsx|gsheet)$/i, '').trim();
+    // Se o nome tiver "—", ":" ou "-", usa o que vem depois do último separador
+    // (ex.: "Inquérito Docente — Faculdade de Engenharias" -> "Faculdade de Engenharias").
+    let facultyFromName = file.getName().replace(/\.(xlsx|gsheet|csv)$/i, '').trim();
+    const sep = facultyFromName.split(/\s+[—–:-]\s+/);
+    if (sep.length > 1) facultyFromName = sep[sep.length - 1].trim();
 
     for (let r = 1; r < data.length; r++) {
       const row = data[r];
